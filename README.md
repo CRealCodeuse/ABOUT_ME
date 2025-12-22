@@ -1,19 +1,16 @@
-# Welcome-to-my-soon-to-be-big-GitHub-
+🤩 HEY THERE ! Welcome on my GitHub !
 
-Hello there !
+🎓 My name is Elise. 
+💻 I'm in a Web Developpement Bachelor and currently looking for an apprenticeship for now.
 
-#Welcome to my big-to-be GitHub !
+💼 On here you can see my things I coded, as my portfolio and projects.
+🔗My portfolio doesn't have a web domain bought yet, but I'm working on it.
 
-#I'm only new there and trying my best to understand how GitHub correctly.
+Languages I know and work with for the moment : HTML, CSS, JavaScript, Python, SQL, Php. Others are on the way of learning, don't worry !
 
-I'm a Web Development Bachelor searching actively for an apprenticeship.
+👌 Pros: May be obsessed with having a clean code, and learning fast.
+🥲 Cons: I hate letting some bug interfere in my work, so I always try to debog my code by myself as soon as I see one even If I have to spend time on it.
 
-I have already coded my own Portfolio, the only thing is I didn't bought a domain name yet, but soon.
+💖 I appreciate if you like my work. Let's be better together !
 
-I freakin love Python, and I'm learning about Javascript for now, to incorporate in my projetcs, as I have some in mind. The thing is I have to start them, and I will put updates here to motivate myself and also you can see how it's going.
-
-I will probably make some mistakes, but I try to always debog my code by myself.
-
-Just be kind.
-
-Xoxo !
+💖 Xoxo !
