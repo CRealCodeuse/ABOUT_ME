@@ -1,8 +1,6 @@
 // Sélectionner l'élément
 const nomPrenom = document.querySelector('.NomPrénom'); // Sélectionner le lien dans l'élément avec la classe 'NomPrénom'
 let clickCount = 0; // Initialisation du compteur de clics
-const clicksRequired1 = 1; // Nombre de clics nécessaires
-const clicksRequired3 = 3; // Nombre de clics nécessaires
 
 // Fonction pour créer et afficher le toast
 function showToast(message) { // Créer le toast
@@ -36,13 +34,12 @@ nomPrenom.addEventListener('click', (e) => {
     e.preventDefault(); // Empêche la navigation
     clickCount++; // Incrémenter le compteur de clics
     
-    if (clickCount === clicksRequired1) { // Vérifier le nombre de clics
+    if (clickCount === 1) { // Vérifier le nombre de clics
         showToast(`🎉 Vous êtes dejà sur mon portfolio !`);
-        clickCount = 1; // Réinitialiser le compteur
     }
-    else if (clickCount === clicksRequired3) { // Vérifier le nombre de clics
+    else if (clickCount === 3) { // Vérifier le nombre de clics
         showToast(`🎉 Ca n'a pas changé...`);
-        clickCount = 3; // Réinitialiser le compteur
+        clickCount = 0; // Réinitialiser le compteur
     }
 });
 
