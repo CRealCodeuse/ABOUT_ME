@@ -3,7 +3,10 @@
 a{ /*propriétés des liens*/
     text-decoration: none; /*décoration du texte des liens*/
     color: black; /*couleur des liens*/
-    
+}
+
+p{
+    padding: 0 20px 0 20px;
 }
 
 strong {
@@ -13,25 +16,6 @@ strong {
 h2, h4 {
     font-weight: 800;
 }
-
-/**********************************HEADER**************************************/
-
-header{ /*Propriétés du haut de page*/
-    background-color: #f1aaaf; /*couleur de fond du haut de page*/
-    padding: 5px; /*espace entre le texte et la bordure*/
-    text-align:center; /*alignement du texte*/
-    margin: 0 0 10px 0; /*espace autour de la bordure*/
-}
-
-.NomPrenom {
-    font-size: 40px; /*taille de la police*/
-    font-family: "Oswald", sans-serif; /*police et style d'écriture*/
-    font-weight: 800; /*Epaisseur de police*/
-    font-style: normal;
-    
-}
-
-/***********************************BODY**************************************/
 
 body{  /*Propriétés du corps de page*/
     background-color: #fff3f3; /*couleur de fond du corps de page*/
@@ -39,25 +23,6 @@ body{  /*Propriétés du corps de page*/
     font-weight: 300; /*Epaisseur de police*/
     font-style: normal;
     font-size: 20px; /*taille de la police*/
-}
-
-
-p{
-    padding: 0 20px 0 20px;
-}/***********************************PROPRIETES GENERALES**************************************/
-
-a{ /*propriétés des liens*/
-    text-decoration: none; /*décoration du texte des liens*/
-    color: black; /*couleur des liens*/
-    
-}
-
-strong {
-    font-weight:500;
-}
-
-h2, h4 {
-    font-weight: 800;
 }
 
 /**********************************HEADER**************************************/
@@ -79,19 +44,6 @@ header{ /*Propriétés du haut de page*/
 
 /***********************************BODY**************************************/
 
-body{  /*Propriétés du corps de page*/
-    background-color: #fff3f3; /*couleur de fond du corps de page*/
-    font-family: "Oswald", sans-serif; /*police et style d'écriture*/
-    font-weight: 300; /*Epaisseur de police*/
-    font-style: normal;
-    font-size: 20px; /*taille de la police*/
-}
-
-
-p{
-    padding: 0 20px 0 20px;
-}
-
 .divPresentation {
     padding: 0 0 0 20px ;
     border: 3px solid darkgrey;
@@ -109,7 +61,7 @@ p{
     padding: 0 20px 15px 20px;
 }
 
-/*PROJET 1 : PIPOUNES CREATION*/
+/*PROJET 1 : PIPOUNES CREATION VERSION */
 
 .divPipCreation{ /*Projet 1*/
     display: grid; /*disposition en grille*/
@@ -134,7 +86,7 @@ p{
     align-self: center; /*alignement de la capture d'écran*/
 }
 
-/*PROJET 2 : TIMER ANTI DISTRACTIONS*/
+/*PROJET 2 : TO DO LIST */
 
 .divToDoList{ /*Projet 2*/
     display: grid; /*disposition en grille*/
