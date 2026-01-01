@@ -30,7 +30,7 @@ button.addEventListener('click', function() {
         'OUTILS INFORMATIQUES': 'COMPUTER TOOLS',
 
         // Présentation
-        'Bienvenue sur mon portfolio !': 'Welcome to my portfolio!',
+        'Bienvenue sur mon portfolio !': 'Welcome on my portfolio!',
         "Je m'appelle Elise, j'ai 29 ans et je suis actuellement en": "My name is Elise, I am 29 years old and I am currently in a",
         "en alternance.": "in work-study.",
         "Concernant les": "Regarding",
