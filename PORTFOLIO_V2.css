@@ -29,8 +29,7 @@ body{  /*Propriétés du corps de page*/
 
 header {
     background-color: #f1aaaf; /*couleur de fond de l'en-tête*/
-    padding: 5px; /*espace autour de l'en-tête*/
-    margin: 0 0 20px 0; /*espace en dessous de l'en-tête*/
+    margin: 0 0 35px 0; /*espace en dessous de l'en-tête*/
     box-shadow: 5px 10px 5px grey; /*ombre portée de l'en-tête*/
     display: flex; /*Utilisation de Flexbox*/
     flex-direction: column; /* Empilement vertical */
@@ -45,7 +44,7 @@ header {
 
 .English {
     align-self: flex-end; /* Aligne uniquement le bouton à droite */
-    margin-right: 20px; /* Espace depuis le bord droit */
+    margin: 0 10px 10px 0; /* Espace depuis le bord droit */
     font-size: 20px; /*taille de la police*/
     border: black 2px solid; /*bordure du bouton*/
     background-color: white; /*couleur de fond du bouton*/
