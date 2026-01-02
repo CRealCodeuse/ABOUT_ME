@@ -24,10 +24,11 @@ button.addEventListener('click', function() {
         'Points négatifs': 'Negative points',
         'TO DO LIST': 'TO DO LIST',
         'Fonctionnalités': 'Features',
-        'TIC TAC TOE': 'TIC TAC TOE',
+        'TIC TAC TOE - En construction': 'TIC TAC TOE - Under construction',
         'COMPETENCES': 'SKILLS',
         'Maîtrise sur 5': 'Knowledge out of 5',
         'OUTILS INFORMATIQUES': 'COMPUTER TOOLS',
+        'A VENIR': 'COMING SOON',
 
         // Présentation
         'Bienvenue sur mon portfolio !': 'Welcome on my portfolio!',
@@ -79,7 +80,12 @@ button.addEventListener('click', function() {
         '- Un alignement de 3 symboles identiques fait gagner son joueur.': '- Aligning 3 identical symbols makes the player win.',
         "- Facile à coder et utiliser.": '- Easy to code and use.',
 
-        
+        //REFONTE SITE CAF
+        'REFONTE SITE CAF - En construction': 'CAF SITE REDESIGN - Under construction',
+        "Je ne trouve pas le site de la CAF très ergonomique, j'ai donc décidé de le refaire à ma façon.": "I don't find the CAF website very user-friendly, so I decided to redo it my way.",
+        '- Site plus ergonomique.': '- More user-friendly site.',
+        '- Navigation plus fluide.': '- Smoother navigation.',
+        '- Design plus moderne.': '- More modern design.',
         
         // Compétences
         'Dans différents projets.': 'In various projects.',
@@ -88,7 +94,7 @@ button.addEventListener('click', function() {
         'Appris en autodidacte.': 'Self-taught.',
         'Quelques bases apprises en BTS SIO puis en autodidacte.': 'Some basics learned in BTS SIO then self-taught.',
         
-        'A VENIR': 'COMING SOON',
+        
         
         // Outils
         'Coder mes projets.': 'To code my projects.',
