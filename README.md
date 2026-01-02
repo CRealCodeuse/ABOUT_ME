@@ -20,6 +20,8 @@
 💻 Projects :
 - Portfolio : HTML, CSS.
 - To Do List : HTML, CSS, JavaScript.
+- TIC TAC TOE : Python, CSS.
+- CAF WEBSITE RECODING : HTML, CSS, JavaScript.
 - Others on the way !
 
 👌 Pros: May be obsessed with having a clean code, and learning fast.
