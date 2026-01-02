@@ -140,7 +140,7 @@ header {
     grid-template-columns: 50% 50%; /*taille des colonnes*/
     grid-template-rows: flex flex; /*la grille s'adapte à la taille du plus grand des items*/
     background-color: #fff3f3; /*couleur de fond de la grille*/
-    margin: 10px 0 10px 0 ; /*marge autour de la grille*/
+    margin: 10px 20px 10px 20px ; /*marge autour de la grille*/
     padding: 0 0 0 30px;
     border: 2px solid darkgrey;
     box-shadow: 5px 5px 5px grey;
