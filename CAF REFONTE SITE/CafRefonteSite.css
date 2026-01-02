@@ -1,0 +1,54 @@
+/*GENERAL*/
+
+body { /*Propriétés du corps de page*/
+    font-family: 'Oswald', sans-serif; /*police et style d'écriture*/
+    background-color: rgb(213, 220, 226); /*couleur de fond de la page*/
+    
+}
+
+h1, h2, h3, h4, h5, h6 { /*Propriétés des titres*/
+    padding: 0 10px 0 10px; /*espace autour des titres*/
+}
+
+/*HEADER*/
+
+header { /*Propriétés de l'en-tête*/
+    font-family: 'Oswald', sans-serif; /*police et style d'écriture*/
+    background-color: #141455; /*couleur de fond*/
+    padding: 15px 10px 15px 10px; /*espace autour de l'en-tête*/
+    position: sticky; /*position fixe*/
+    top: 0; /*position en haut de la page*/
+    vertical-align: middle;
+}
+
+.Accueil { /*Bouton Accueil*/
+    color: white; /*couleur du texte*/
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none; /*décoration du texte*/
+    font-size: 25px; /*taille de la police*/
+    padding: 0 10px 0 10px; /*espace autour du texte*/
+    
+}
+
+.Malvoyant { /*Bouton Malvoyant*/
+    background-color: #141455 ; /*couleur de fond*/
+    border: none; /*bordure*/
+    padding: 0 10px 0 10px; /*espace autour du texte*/
+}
+
+.Connexion { /*Bouton Connexion*/
+    background-color: #141455 ; /*couleur de fond*/
+    border: none; /*bordure*/
+    padding: 0 10px 15px 10px; /*espace autour du texte*/
+    float: right; /*position à droite*/
+    margin-left: 10px; /
+}
+
+.Recherche { /*Bouton Recherche*/
+    background-color: #141455 ; /*couleur de fond*/
+    border: none; /*bordure*/
+    padding: 0 10px 0 10px; /*espace autour du texte*/
+    float: inline-end; /*position à droite*/
+    margin-left: auto; /*espace automatique à gauche*/
+}
+
