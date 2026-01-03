@@ -15,6 +15,11 @@ p{
     font-size: 20px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /*HEADER*/
 
 header { /*Propriétés de l'en-tête*/
@@ -63,7 +68,7 @@ header { /*Propriétés de l'en-tête*/
     padding: 5px 15px; /*espace autour de la description*/
     background-color: #e3e3f1; /*couleur de fond de la description*/
     margin: 20px 20px 20px 20px; /*marge autour de la description*/
-    border: 2px solid #5e5e5e; /*bordure de la description*/
+    border: none; /*bordure de la description*/               /*2px solid #5e5e5e*/
     box-shadow: 10px 10px 20px grey; /*ombre portée de la description*/
     border-radius: 15px; /*bords arrondis*/
 }
@@ -72,7 +77,7 @@ header { /*Propriétés de l'en-tête*/
     padding: 5px 15px; /*espace autour des informations*/
     background-color: #e3e3f1; /*couleur de fond des informations*/
     margin: 20px 20px 20px 20px; /*marge autour des informations*/
-    border: 2px solid #5e5e5e; /*bordure des informations*/
+    border: none; /*bordure des informations*/
     box-shadow: 10px 10px 20px grey; /*ombre portée des informations*/
     border-radius: 15px; /*bords arrondis*/
     display: flex;
@@ -85,4 +90,42 @@ header { /*Propriétés de l'en-tête*/
 .imageInformation {
     padding-left: 90px;
     padding-bottom: 15px;
+}
+
+.divServices {
+    margin: 0 20px 0 20px;
+    padding: 5px 20px 10px 20px;
+    border: none;
+    background-color: #e3e3f1;
+    box-shadow: 10px 10px 20px grey; /*ombre portée des informations*/
+    border-radius: 15px; /*bords arrondis*/
+}
+
+.ViePersonnelle, .VieProfessionnelle, .Logement, .Handicap, .Accident {
+    text-align: center;
+}
+
+.TitresServices {
+    background-color: #141455;
+    color: white;
+}
+
+.ImageViePersonnelle {
+    background-color: lightpink;
+}
+
+.ImageVieProfessionnelle {
+    background-color: lightskyblue;
+}
+
+.ImageLogement {
+    background-color: lightgreen;
+}
+
+.ImageHandicap {
+    background-color: violet;
+}
+
+.ImageAccident {
+    background-color: lightcoral;
 }
