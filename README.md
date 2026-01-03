@@ -1,4 +1,4 @@
-<video controls src="Video - Hello.mp4" title="Hello"></video>
+![Hello Image](<PortfolioImages/Image - Hello.png>)
 
 🤩 HEY THERE ! Welcome on my GitHub !
 
@@ -8,8 +8,6 @@
 
 💼 There you can see projects I coded or working on currently.
 🔗 NB : My portfolio now has a web domain, I'm just working on the files and folders needed on the app.
-
-<video controls src="Vidéo - Programmation.mp4" title"Programmation"></video>
 
 ✅​ LANGUAGES I WORK WITH : 
 - HTML, CSS : Basic but needed so I put it everywhere.
