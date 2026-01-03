@@ -29,6 +29,7 @@ header { /*Propriétés de l'en-tête*/
     position: sticky; /*position fixe*/
     top: 0; /*position en haut de la page*/
     vertical-align: middle;
+    border: white 2px solid;
 }
 
 .Accueil { /*Bouton Accueil*/
@@ -105,9 +106,14 @@ header { /*Propriétés de l'en-tête*/
     text-align: center;
 }
 
+.ImageViePersonnelle, .ImageVieProfessionnelle, .ImageLogement, .ImageHandicap, .ImageAccident {
+    padding-top: 15px;
+}
+
 .TitresServices {
     background-color: #141455;
     color: white;
+    padding-bottom: 5px;
 }
 
 .ImageViePersonnelle {
