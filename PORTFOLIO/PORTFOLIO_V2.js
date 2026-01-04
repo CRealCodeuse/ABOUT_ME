@@ -86,7 +86,7 @@ button.addEventListener('click', function() {
         ", j'ai pu apprendre le": " I learned",
         "et le": "and",
         "lors de mon début de formation en": "at the beginning of my training in",
-        ". Par la suite, j'ai appris": ". Subsequently, I learned",
+        "Par la suite, j'ai appris": "Subsequently, I learned",
         "le": "the", 
         "et bien d'autres afin d'apprendre toutes les compétences nécessaires au": "and many others to learn all the skills necessary for", 
         "nécessaires au": "necessary for", 
@@ -94,6 +94,7 @@ button.addEventListener('click', function() {
         "que j'ai": "I have", 
         ", qui vous permettront de comprendre mon": ", which will allow you to understand my", 
         "viendront s'ajouter au fur et à mesure de mon": "will be added as I progress in my ",
+        "Les photos et les titres des projets vous mèneront directement à leurs pages.":"Captures and titles will lead you directly to their pages.",
         'Bonne visite !': 'Enjoy your visit!',
         
         // Projets
