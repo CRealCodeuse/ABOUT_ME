@@ -5,16 +5,9 @@
 body { 
     font-family: 'Oswald', sans-serif; /* Police et style d'écriture */
     background-color: rgb(213, 220, 226); /* Couleur de fond de la page */
-    margin: 0; /* Supprime les marges par défaut */
-    padding: 0; /* Supprime les paddings par défaut */
-}
-
-h1, h2, h3, h4, h5, h6 { 
-    padding: 0 10px; /* Espace autour des titres */
 }
 
 p { 
-    padding: 0 20px; /* Espace autour des paragraphes */
     font-size: 20px; /* Taille de la police */
 }
 
@@ -85,35 +78,35 @@ header {
 /*===================================
   BODY - DESCRIPTION
 ===================================*/
+.divDescription {
+    padding: 5px 15px 5px 15px; /* Espace autour de la div */
+    background-color: #e3e3f1; /* Couleur de fond de la div */
+    margin: 25px 20px 20px 20px; /* Marge autour de la div */
+    max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
+    border: none; /* Pas de bordure */
+    box-shadow: 10px 10px 20px grey; /* Ombre portée de la div */
+    border-radius: 15px; /* Bords arrondis */
+    box-sizing: border-box; /* Inclut padding et border dans la width */
+}
 
 .TitreDescription {
     background-color: #141455; /* Couleur de fond */
     color: white; /* Couleur du texte */
     border-radius: 20px; /* Bords arrondis */
     text-align: center; /* Centre le texte */
-}
-
-.DescriptionSite {
-    padding: 5px 15px; /* Espace autour de la description */
-    background-color: #e3e3f1; /* Couleur de fond de la description */
-    margin: 30px 20px 20px 20px; /* Marge autour de la description */
-    max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
-    border: none; /* Pas de bordure */
-    box-shadow: 10px 10px 20px grey; /* Ombre portée de la description */
-    border-radius: 15px; /* Bords arrondis */
-    box-sizing: border-box; /* Inclut padding et border dans la width */
+    padding: 10px; /*Espace autour du titre*/
 }
 
 /* Responsive : Réduction des marges sur petits écrans */
 @media (max-width: 768px) {
-    .DescriptionSite {
+    .divDescription {
         margin: 20px 15px; /* Marges réduites pour tablettes */
         padding: 10px; /* Padding réduit */
     }
 }
 
 @media (max-width: 480px) {
-    .DescriptionSite {
+    .divDescription {
         margin: 15px 10px; /* Marges réduites pour mobiles */
         padding: 8px; /* Padding réduit */
     }
@@ -123,14 +116,17 @@ header {
     background-color: white; /* Couleur de fond */
     border: none; /* Pas de bordure */
     border-radius: 5px; /* Bords arrondis */
+    padding: 15px;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /*===================================
   INFORMATIONS
 ===================================*/
 
-.Informations { 
-    padding: 5px 15px; /* Espace autour des informations */
+.divInformations { 
     background-color: #e3e3f1; /* Couleur de fond des informations */
     margin: 30px 20px 20px 20px; /* Marge autour des informations */
     max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
@@ -140,35 +136,53 @@ header {
     display: flex; /* Utilise Flexbox */
     flex-wrap: wrap; /* Permet le passage à la ligne sur petits écrans */
     box-sizing: border-box; /* Inclut padding et border dans la width */
+    justify-content:center;
 }
 
 /* Responsive : Réduction des marges sur petits écrans */
 @media (max-width: 768px) {
-    .Informations {
-        margin: 20px 15px; /* Marges réduites pour tablettes */
-        padding: 10px; /* Padding réduit */
+    .divInformations {
+        margin: 20px 15px 20px 15px; /* Marges réduites pour tablettes */
+        padding: 5px; /* Padding réduit */
     }
 }
 
 @media (max-width: 480px) {
-    .Informations {
+    .divInformations {
         margin: 15px 10px; /* Marges réduites pour mobiles */
         padding: 8px; /* Padding réduit */
         flex-direction: column; /* Empile verticalement sur mobile */
     }
 }
 
-.Informations h1 {
+.divH1Image {
+    text-align: center;
+}
+
+.InformationsGrid {
+    text-align: center;
+}
+
+.InfoTitre {
     text-align: center; /* Centre le texte */
-    background-color: #141455; /* Couleur de fond */
+    width: 95%; /* Prend toute la largeur */
+    background-color: #141455; /* Couleur de fond */  
     color: white; /* Couleur du texte */
     border-radius: 20px; /* Bords arrondis */
-    width: 95%; /* Prend toute la largeur */
+    padding:10px;
+}
+
+.Information h2 {
+    margin: 10px;
+}
+
+.Information p {
+    margin: 0px;
 }
 
 .imageInformation {
-    padding-left: 100px; /* Espace à gauche de l'image */
-    padding-bottom: 15px; /* Espace en bas de l'image */
+    display: inline-block; /* Met l'image en inline */
+    vertical-align: middle; /* Aligne avec le h1 */
 }
 
 /* Responsive : Réduction du padding sur petits écrans */
@@ -193,13 +207,13 @@ header {
 .Information {
     font-family: 'Oswald', sans-serif; /* Police */
     font-size: 15px; /* Taille de la police */
-    margin: 10px 0 10px 15px; /* Marges autour de l'information */
-    width: 100%; /* Prend toute la largeur disponible */
-    max-width: 500px; /* Largeur maximale */
+    margin: 10px 0 15px 0; /* Marges autour de l'information */
+    width: 95%; /* Prend toute la largeur disponible */
+    max-width: 900px; /* Largeur maximale */
     border: none; /* Pas de bordure */
     border-radius: 5px; /* Bords arrondis */
     background-color: white; /* Couleur de fond */
-    box-sizing: border-box; /* Inclut padding et border dans la width */
+    box-sizing: border-box; /* Inclut padding et border dans la width */   
 }
 
 /* Responsive : Adaptation de la largeur sur différents écrans */
@@ -209,6 +223,7 @@ header {
         max-width: 100%; /* Supprime la limite de 500px */
         margin: 10px auto; /* Centre l'élément */
         font-size: 14px; /* Taille de police réduite */
+        color: black;
     }
 }
 
@@ -217,6 +232,7 @@ header {
         width: 95%; /* 95% de la largeur sur mobiles */
         margin: 10px auto; /* Centre l'élément */
         font-size: 13px; /* Taille de police réduite */
+        color: black;
     }
 }
 
@@ -230,6 +246,7 @@ header {
 ===================================*/
 
 .divServices {
+    padding: 15px;
     margin: 30px 20px 0 20px; /* Marge autour de la div */
     max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
     padding: 0px 20px 10px 20px; /* Espace interne */
@@ -240,6 +257,9 @@ header {
     box-sizing: border-box; /* Inclut padding et border dans la width */
 }
 
+.Servicesh1 {
+    padding-top: 10px;
+}
 /* Responsive : Réduction des marges sur petits écrans */
 @media (max-width: 768px) {
     .divServices {
@@ -255,24 +275,26 @@ header {
     }
 }
 
-.ViePersonnelle, .VieProfessionnelle, .Logement, .Handicap, .Accident {
+.divViePersonnelle, .divVieProfessionnelle, .divLogement, .divHandicap, .divAccident {
     text-align: center; /* Centre le texte */
+    margin: 15px;
 }
 
 .pServices {
     background-color: #e3e3f1; /* Couleur de fond */
     color: #141455; /* Couleur du texte */
     border-radius: 10px; /* Bords arrondis */
+    padding: 10px;
 }
 
 .ImageViePersonnelle, .ImageVieProfessionnelle, .ImageLogement, .ImageHandicap, .ImageAccident {
     display: flex; /* Utilise Flexbox */
     flex-wrap: wrap; /* Permet au h2 de passer en dessous */
     align-items: center; /* Aligne verticalement les éléments */
-    gap: 20px; /* Espace entre les éléments */
+    gap: 15px; /* Espace entre les éléments */
     justify-content: center; /* Centre les éléments horizontalement */
-    padding-top: 10px; /* Espace en haut */
-    padding-bottom: 10px; /* Espace en bas */
+    padding-top: 15px; /* Espace en haut */
+    padding-bottom: 15px; /* Espace en bas */
     text-align: left; /* Alignement du texte à gauche */
 }
 
@@ -301,6 +323,7 @@ header {
     flex-basis: 100%; /* Force le h2 à prendre 100% de la largeur */
     text-align: center; /* Centre le texte */
     margin: 0; /* Supprime les marges */
+    padding: 10px;
 }
 
 /* Responsive : Réduction de la taille de police sur petits écrans */
@@ -312,42 +335,52 @@ header {
 
 .ImageViePersonnelle {
     background-color: lightpink; /* Couleur de fond */
+    border: #141455 3px solid;
 }
 
 .ImageViePersonnelle:hover {
-    background-color: #e3e3f1; /* Couleur de fond au survol */
+    background-color:#e3e3f1; /* Couleur de fond au survol */
+    border: #141455 3px solid;
 }
 
 .ImageVieProfessionnelle {
     background-color: lightskyblue; /* Couleur de fond */
+    border: #141455 3px solid;
 }
 
 .ImageVieProfessionnelle:hover {
     background-color: #e3e3f1; /* Couleur de fond au survol */
+    border: #141455 3px solid;
 }
 
 .ImageLogement {
     background-color: #EFE3D3; /* Couleur de fond */
+    border: #141455 3px solid;
 }
 
 .ImageLogement:hover {
     background-color: #e3e3f1; /* Couleur de fond au survol */
+    border: #141455 3px solid;
 }
 
 .ImageHandicap {
     background-color: #e9e78a; /* Couleur de fond */
+    border: #141455 3px solid;
 }
 
 .ImageHandicap:hover {
     background-color: #e3e3f1; /* Couleur de fond au survol */
+    border: #141455 3px solid;
 }
 
 .ImageAccident {
     background-color: #6fdfc3; /* Couleur de fond */
+    border: #141455 3px solid;
 }
 
 .ImageAccident:hover {
     background-color: #e3e3f1; /* Couleur de fond au survol */
+    border: #141455 3px solid;
 }
 
 /*===================================
@@ -357,12 +390,16 @@ header {
 .divActions {
     margin: 30px 20px 0 20px; /* Marge autour de la div */
     max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
-    padding: 5px 20px 10px 20px; /* Espace interne */
+    padding: 15px; /* Espace interne */
     border: none; /* Pas de bordure */
     background-color: #e3e3f1; /* Couleur de fond */
     box-shadow: 10px 10px 20px grey; /* Ombre portée */
     border-radius: 15px; /* Bords arrondis */
-    box-sizing: border-box; /* Inclut padding et border dans la width */
+    
+}
+
+.divActions h1 {
+    margin-top: 0;
 }
 
 /* Responsive : Réduction des marges sur petits écrans */
@@ -418,6 +455,7 @@ header {
 .ButtonsActions:hover {
     background-color: white; /* Couleur de fond au survol */
     color: #141455; /* Couleur du texte au survol */
+    border: #141455 3px solid;
 }
 
 /*===================================
@@ -427,12 +465,16 @@ header {
 .divMagasine {
     margin: 30px 20px 0 20px; /* Marge autour de la div */
     max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
-    padding: 5px 20px 10px 20px; /* Espace interne */
+    padding: 15px; /* Espace interne */
     border: none; /* Pas de bordure */
     background-color: #e3e3f1; /* Couleur de fond */
     box-shadow: 10px 10px 20px grey; /* Ombre portée */
     border-radius: 15px; /* Bords arrondis */
     box-sizing: border-box; /* Inclut padding et border dans la width */
+}
+
+.divMagasine h1 {
+    margin-top: 0;
 }
 
 /* Responsive : Réduction des marges sur petits écrans */
@@ -453,7 +495,7 @@ header {
 .PresentationMagasine {
     background-color: white; /* Couleur de fond */
     border-radius: 10px; /* Bords arrondis */
-    padding: 15px; /* Espace interne */
+    padding: 20px; /* Espace interne */
 }
 
 /* Responsive : Réduction du padding sur petits écrans */
@@ -467,7 +509,7 @@ header {
     background-color: #141455; /* Couleur de fond */
     color: white; /* Couleur du texte */
     border: none; /* Pas de bordure */
-    border-radius: 5px; /* Bords arrondis */
+    border-radius: 10px; /* Bords arrondis */
     padding: 5px; /* Espace interne */
     width: 200px; /* Largeur du bouton */
     max-width: 100%; /* S'adapte à la largeur disponible */
@@ -493,17 +535,14 @@ header {
 }
 
 .LogoArticle {
-    display: flex; /* Utilise Flexbox */
+    display: inline-flex;
     align-items: center; /* Aligne verticalement les éléments */
-    background-color: #e3e3f1; /* Couleur de fond */
     width: 150px; /* Largeur du logo */
     max-width: 100%; /* S'adapte à la largeur disponible */
-    height: 50px; /* Hauteur du logo */
+    height: 40px; /* Hauteur du logo */
     margin-top: 10px; /* Marge en haut */
-    padding: 5px; /* Espace interne */
-    border-radius: 5px; /* Bords arrondis */
     gap: 10px; /* Espace entre l'image et le texte */
-    box-sizing: border-box; /* Inclut padding et border dans la width */
+    padding: 10px;
 }
 
 /* Responsive : Ajustement sur petits écrans */
@@ -512,12 +551,6 @@ header {
         width: 120px; /* Largeur réduite pour mobiles */
         height: 40px; /* Hauteur réduite */
     }
-}
-
-.ImageLogoArticle {
-    width: 40px; /* Largeur de l'image */
-    height: 40px; /* Hauteur de l'image */
-    flex-shrink: 0; /* Empêche l'image de rétrécir */
 }
 
 /* Responsive : Réduction de la taille de l'image sur mobile */
@@ -548,11 +581,28 @@ header {
     background-color: #e3e3f1; /* Couleur de fond */
     border: none; /* Pas de bordure */
     border-radius: 5px; /* Bords arrondis */
+    padding: 10px;
 }
 
-.DecouvrirMag, .BoutonQuestions {
+.DecouvrirMag {
     font-family: "Oswald", sans-serif; /* Police */
-    font-weight: 600; /* Poids de la police */
+    font-weight: 500; /* Poids de la police */
+    font-size: 25px; /* Taille de la police */
+    padding: 10px; /* Espace interne */
+    border: none; /* Pas de bordure */
+    background-color: #141455; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border-radius: 15px; /* Bords arrondis */
+    display: block; /* Affichage en bloc */
+    margin: 15px auto 0; /* Centre le bouton avec marge en haut */
+    width: 250px; /* Largeur maximale */
+    cursor: pointer; /* Change le curseur au survol */
+    box-sizing: border-box; /* Inclut padding et border dans la width */
+}
+
+.BoutonQuestions {
+    font-family: "Oswald", sans-serif; /* Police */
+    font-weight: 500; /* Poids de la police */
     font-size: 25px; /* Taille de la police */
     padding: 10px; /* Espace interne */
     border: none; /* Pas de bordure */
@@ -561,8 +611,7 @@ header {
     border-radius: 15px; /* Bords arrondis */
     display: block; /* Affichage en bloc */
     margin: 10px auto 0; /* Centre le bouton avec marge en haut */
-    max-width: 300px; /* Largeur maximale */
-    width: 100%; /* Prend toute la largeur disponible */
+    width: 270px; /* Largeur maximale */
     cursor: pointer; /* Change le curseur au survol */
     box-sizing: border-box; /* Inclut padding et border dans la width */
 }
@@ -601,6 +650,11 @@ header {
     box-shadow: 10px 10px 20px grey; /* Ombre portée */
     border-radius: 15px; /* Bords arrondis */
     box-sizing: border-box; /* Inclut padding et border dans la width */
+}
+
+.divQuestions h1 {
+    margin: 0;
+    padding-top: 10px;
 }
 
 /* Responsive : Réduction des marges sur petits écrans */
