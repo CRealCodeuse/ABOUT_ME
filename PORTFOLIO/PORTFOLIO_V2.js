@@ -103,11 +103,10 @@ button.addEventListener('click', function() {
         
         // Projets
         'MES PROJETS :': 'MY PROJECTS:',
-        'CE QUE J\'UTILISE':'WHAT I\'M USING',
+        'CE QUE J\'UTILISE :':'WHAT I\'M USING :',
 
         //PIPOUNES CREATION VERSION BTS
-        'PIPOUNES CREATION VERSION BTS': 'PIPOUNES CREATION BTS VERSION',
-        '- Laissé tel quel':'- Left as is',
+        'PIPOUNES CREATION VERSION BTS - Laissé tel quel': 'PIPOUNES CREATION BTS VERSION - Left as is',
         "C'est un site que j'ai créé au début du BTS SIO pour m'entraîner à coder un site de A à Z, avec seulement les bases apprises, mais pas complètes.": "This is a website that I created at the beginning of the BTS SIO to practice coding a website from A to Z, with only the basics learned, but not complete.",
         '- Tous les liens redirigent vers leur page correspondante.': '- Every links redirect to their corresponding page.',
         "- Il est possible de s'inscrire à la Newsletter du site via un formulaire d'inscription.": "- It is possible to subscribe to the site's Newsletter via a registration form.",
@@ -115,8 +114,7 @@ button.addEventListener('click', function() {
         '- Code basique, manque de structure et de lisibilité.': '- Basic code, lack of structure and readability.',
         
         // ToDoList
-        'TO DO LIST': 'TO DO LIST',
-        '- Terminé':'- Finished',
+        'TO DO LIST - Terminé': 'TO DO LIST - Complete',
         "Pour gérer tes tâches du quotidien avec facilité, encouragements et mignonnerie, quoi de mieux ?": "To manage your daily tasks easily, with encouragement and cuteness, what else?",
         "Que ce soit pour le travail, les courses, ou même les projets personnels, elle est faite pour toi !": "Whether it's for work, shopping or even personal projects, it's made for you!",
         'Langages utilisés': 'Used languages',
@@ -129,16 +127,8 @@ button.addEventListener('click', function() {
         '- Félicitations si tâches effectuées.': '- Congratulations if tasks completed.',
         '- Rappels de tâches non remplies avant remise à zéro du tableau.': '- Reminders of uncompleted tasks before resetting the table.',
 
-        // Tic Tac Toe
-        "Si jamais l'envie te prends de jouer au Tic Tac Toe, fonce !": "If you ever feel like playing Tic Tac Toe, go for it!",
-        '- Toutes les cases sont vides au départ.': '- All boxes are empty at the start.',
-        "- Il n'est pas possible d'écrire deux fois dans la même case ou de modifier la valeur d'une case.": "- It is not possible to write twice in the same box or to modify the value of a box.",
-        '- Un alignement de 3 symboles identiques fait gagner son joueur.': '- Aligning 3 identical symbols makes the player win.',
-        "- Facile à coder et utiliser.": '- Easy to code and use.',
-
         //REFONTE SITE CAF
-        'REFONTE DU SITE DE LA CAF':'CAF SITE REDESIGN',
-        '- En construction':'Under construction',
+        'REFONTE DU SITE DE LA CAF - En construction':'CAF WEBSITE REDESIGN - Under construction',
         "Je ne trouve pas le site de la CAF très ergonomique, j'ai donc décidé de le refaire à ma façon.": "I don't find the CAF website very user-friendly, so I decided to redo it my way.",
         '- Site plus ergonomique.': '- More user-friendly site.',
         '- Navigation plus fluide.': '- Smoother navigation.',

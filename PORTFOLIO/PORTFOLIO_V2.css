@@ -238,7 +238,7 @@ header { /*Propriétés de l'en-tête*/
     .photoElisePortfolio {
         border: none;
         margin: 0;
-        
+        width:300px
     }
 }
 
@@ -360,7 +360,7 @@ header { /*Propriétés de l'en-tête*/
     .Captures {
         margin-top: 5px;
         margin-bottom: 5px;
-        max-width: 100%;
+        width:300px
     }
 }
 
@@ -394,7 +394,7 @@ header { /*Propriétés de l'en-tête*/
     .divCompetencesOutils {
         display: flex; /*Utilisation de Flexbox*/
         flex-direction: column; /* Empilement vertical */
-        margin: 0;
+        margin: 15px;
         padding: 15px;
 
     }
