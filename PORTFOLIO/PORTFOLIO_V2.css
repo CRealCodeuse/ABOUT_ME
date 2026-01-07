@@ -348,19 +348,20 @@ header { /*Propriétés de l'en-tête*/
 }
 
 .Captures { /*captures d'écran*/
-    width: 100%; /*largeur max*/
+    max-width: 100%; /*largeur max*/
+    width: 100%;
     height: auto; /*hauteur max*/
-    align-self: center; /*alignement de la capture d'écran*/
+    display:block;
+    margin: 0 auto 20px; /* Centre l'image */
     border: black 2px solid; /*bordure de la capture d'écran*/
     border-radius: 20px; /*bords arrondis de la capture d'écran*/
-    margin-bottom: 20px;
 }
 
 @media (max-width:480px) {
     .Captures {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        width:300px
+        margin: 5px auto;
+        max-width: 100%;
+        width: 100%;
     }
 }
 
