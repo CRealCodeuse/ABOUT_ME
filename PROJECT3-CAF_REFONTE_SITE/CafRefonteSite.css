@@ -7,13 +7,27 @@ body {
     background-color: rgb(213, 220, 226); /* Couleur de fond de la page */
 }
 
-p { 
-    font-size: 20px; /* Taille de la police */
-}
-
 a {
     text-decoration: none; /* Supprime le soulignement des liens */
     color: black; /* Couleur des liens */
+}
+
+@media (max-width:480px) {
+
+    a {
+        text-decoration: none;
+    }
+
+    .Informations Grid .Information {
+        text-decoration: none;
+        color:black;
+    }
+
+    .Services .TitresServices {
+        text-decoration: none;
+        color:white;
+    }
+
 }
 
 /*===================================
@@ -23,49 +37,149 @@ a {
 header { 
     font-family: 'Oswald', sans-serif; /* Police et style d'écriture */
     background-color: #141455; /* Couleur de fond */
-    padding: 15px 10px; /* Espace autour de l'en-tête */
     position: sticky; /* Position fixe lors du scroll */
     top: 0; /* Position en haut de la page */
     vertical-align: middle; /* Alignement vertical */
     border: white 2px solid; /* Bordure blanche */
-    border-radius: 5px; /* Bords arrondis */
+    border-radius: 10px; /* Bords arrondis */
     z-index: 1000; /* S'assure que le header reste au-dessus */
+    height: 65px;
 }
 
 .Accueil { 
     color: white; /* Couleur du texte */
     font-family: 'Oswald', sans-serif; /* Police */
     text-decoration: none; /* Supprime le soulignement */
-    font-size: 25px; /* Taille de la police */
-    padding: 0 10px; /* Espace autour du texte */
+    font-size: 30px; /* Taille de la police */
+    margin-left: 15px; /* Espace autour du texte */
 }
 
-/* Responsive : Réduction de la taille sur petits écrans */
-@media (max-width: 768px) {
-    .Accueil {
-        font-size: 20px; /* Taille réduite pour tablettes */
-    }
+.Accueil:hover {
+    border:2px solid black;
+    padding: 5px 10px 10px 10px;
 }
 
 @media (max-width: 480px) {
     .Accueil {
-        font-size: 18px; /* Taille réduite pour mobiles */
+        font-size: 25px; /* Taille réduite pour mobiles */
     }
 }
 
 .Malvoyant { 
     background-color: #141455; /* Couleur de fond */
     border: none; /* Pas de bordure */
-    padding: 0 10px; /* Espace autour du texte */
+    margin-left: 30px; /* Espace autour du texte */
 }
 
 .Connexion { 
     background-color: #141455; /* Couleur de fond */
     border: none; /* Pas de bordure */
-    padding: 0 10px 15px 10px; /* Espace autour du texte */
+    padding: 10px; /* Espace autour du texte */
     float: right; /* Position à droite */
     margin-left: 10px; /* Espace à gauche */
+    cursor: pointer;
 }
+
+.Recherche {
+    margin-top: 10px;
+}
+
+.Connexion:hover {
+    border:2px solid black; 
+}
+
+.PopUp {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#141455;
+}
+
+@media (max-width:480px) {
+    .PopUp {
+        background:none;
+        top: -35;
+        width: 330px;
+        margin: 10px;
+        justify-content: center;
+    }
+}
+
+.ContenuPopUp {
+    background-color:#e3e3f1;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width:480px) {
+    .ContenuPopUp {
+        background-color:#e3e3f1;
+        margin: 10% auto;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 95%;
+        max-width: 330px;
+        position: relative;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.TitrePopUp {
+    background-color: #141455;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+@media (max-width:480px) {
+    .TitrePopUp {
+        margin: 30px 5px 5px 5px;
+        padding: 15px;
+        font-size: 22px;
+
+    }
+}
+
+.Fermer {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+@media (max-width:480px) {
+    .Fermer {
+        position: absolute;
+        right: 20px;
+        top: 5px;
+    }
+}
+
+.Fermer:hover {
+    color:#000;
+}
+
+.FormulaireConnexion label {
+    font-family: "Oswald";
+    display: block;
+    margin-top: 15px;
+}
+
+
 
 .Recherche { 
     background-color: #141455; /* Couleur de fond */
@@ -81,7 +195,7 @@ header {
 .divDescription {
     padding: 5px 15px 5px 15px; /* Espace autour de la div */
     background-color: #e3e3f1; /* Couleur de fond de la div */
-    margin: 25px 20px 20px 20px; /* Marge autour de la div */
+    margin: 25px 60px 20px 60px; /* Marge autour de la div */
     max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
     border: none; /* Pas de bordure */
     box-shadow: 10px 10px 20px grey; /* Ombre portée de la div */
@@ -89,37 +203,49 @@ header {
     box-sizing: border-box; /* Inclut padding et border dans la width */
 }
 
+@media (max-width:480px) {
+    .divDescription {
+        width:350px;
+        max-width: 400px;
+        margin: 10px 5px;
+    }
+}
+
 .TitreDescription {
     background-color: #141455; /* Couleur de fond */
     color: white; /* Couleur du texte */
-    border-radius: 20px; /* Bords arrondis */
+    border-radius: 10px; /* Bords arrondis */
     text-align: center; /* Centre le texte */
     padding: 10px; /*Espace autour du titre*/
 }
 
-/* Responsive : Réduction des marges sur petits écrans */
-@media (max-width: 768px) {
-    .divDescription {
-        margin: 20px 15px; /* Marges réduites pour tablettes */
-        padding: 10px; /* Padding réduit */
-    }
-}
-
-@media (max-width: 480px) {
-    .divDescription {
-        margin: 15px 10px; /* Marges réduites pour mobiles */
-        padding: 8px; /* Padding réduit */
+@media (max-width:480px) {
+    .TitreDescription {
+        font-size: 23px;
+        text-align: left;
+        padding: 15px;
+        width:90%;
     }
 }
 
 .TexteDescription {
-    background-color: white; /* Couleur de fond */
+    background-color: whitesmoke; /* Couleur de fond */
     border: none; /* Pas de bordure */
-    border-radius: 5px; /* Bords arrondis */
+    border-radius: 10px; /* Bords arrondis */
     padding: 15px;
-    max-width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    max-width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+}
+
+@media (max-width:480px) {
+    .TexteDescription {
+        margin: 10px;
+        max-width: 90%;
+        padding: 20px;
+        font-size: 20px;
+    }
 }
 
 /*===================================
@@ -128,7 +254,7 @@ header {
 
 .divInformations { 
     background-color: #e3e3f1; /* Couleur de fond des informations */
-    margin: 30px 20px 20px 20px; /* Marge autour des informations */
+    margin: 30px 60px 20px 60px; /* Marge autour des informations */
     max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
     border: none; /* Pas de bordure */
     box-shadow: 10px 10px 20px grey; /* Ombre portée des informations */
@@ -139,28 +265,19 @@ header {
     justify-content:center;
 }
 
-/* Responsive : Réduction des marges sur petits écrans */
-@media (max-width: 768px) {
-    .divInformations {
-        margin: 20px 15px 20px 15px; /* Marges réduites pour tablettes */
-        padding: 5px; /* Padding réduit */
-    }
-}
-
 @media (max-width: 480px) {
     .divInformations {
-        margin: 15px 10px; /* Marges réduites pour mobiles */
-        padding: 8px; /* Padding réduit */
+        width:350px;
+        max-width: 400px;
+        margin: 10px 5px;
         flex-direction: column; /* Empile verticalement sur mobile */
+        padding: 15px;
     }
 }
 
 .divH1Image {
     text-align: center;
-}
-
-.InformationsGrid {
-    text-align: center;
+    padding: 5px;
 }
 
 .InfoTitre {
@@ -172,12 +289,13 @@ header {
     padding:10px;
 }
 
-.Information h2 {
-    margin: 10px;
-}
-
-.Information p {
-    margin: 0px;
+@media (max-width:480px) {
+    .InfoTitre {
+        font-size: 23px;
+        text-align: center;
+        padding: 15px;
+        width:90%;
+    }
 }
 
 .imageInformation {
@@ -204,6 +322,10 @@ header {
     }
 }
 
+.InformationsGrid {
+    text-align: center;
+}
+
 .Information {
     font-family: 'Oswald', sans-serif; /* Police */
     font-size: 15px; /* Taille de la police */
@@ -216,15 +338,9 @@ header {
     box-sizing: border-box; /* Inclut padding et border dans la width */   
 }
 
-/* Responsive : Adaptation de la largeur sur différents écrans */
-@media (max-width: 768px) {
-    .Information {
-        width: 90%; /* 90% de la largeur sur tablettes */
-        max-width: 100%; /* Supprime la limite de 500px */
-        margin: 10px auto; /* Centre l'élément */
-        font-size: 14px; /* Taille de police réduite */
-        color: black;
-    }
+.Information:hover {
+    background-color: #141455; /* Couleur de fond au survol */
+    color: white; /* Couleur du texte au survol */
 }
 
 @media (max-width: 480px) {
@@ -236,9 +352,13 @@ header {
     }
 }
 
-.Information:hover {
-    background-color: #141455; /* Couleur de fond au survol */
-    color: white; /* Couleur du texte au survol */
+.Information p {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.Information h2 {
+    margin: 10px;
 }
 
 /*===================================
@@ -247,7 +367,7 @@ header {
 
 .divServices {
     padding: 15px;
-    margin: 30px 20px 0 20px; /* Marge autour de la div */
+    margin: 30px 60px 20 60px; /* Marge autour de la div */
     max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
     padding: 0px 20px 10px 20px; /* Espace interne */
     border: none; /* Pas de bordure */
@@ -255,16 +375,28 @@ header {
     box-shadow: 10px 10px 20px grey; /* Ombre portée */
     border-radius: 15px; /* Bords arrondis */
     box-sizing: border-box; /* Inclut padding et border dans la width */
+    text-align: center;
+}
+
+/* Responsive : Réduction des marges sur petits écrans */
+@media (max-width: 768px) {
+    .divServices {
+        width:350px;
+        max-width: 400px;
+        margin: 10px 5px;
+        flex-direction: column; /* Empile verticalement sur mobile */
+        padding: 15px;
+    }
 }
 
 .Servicesh1 {
     padding-top: 10px;
+    
 }
-/* Responsive : Réduction des marges sur petits écrans */
-@media (max-width: 768px) {
-    .divServices {
-        margin: 20px 15px 0; /* Marges réduites pour tablettes */
-        padding: 0 15px 10px; /* Padding réduit */
+
+@media (max-width:480px) {
+    .Servicesh1 {
+        font-size: 28px;
     }
 }
 
@@ -278,13 +410,17 @@ header {
 .divViePersonnelle, .divVieProfessionnelle, .divLogement, .divHandicap, .divAccident {
     text-align: center; /* Centre le texte */
     margin: 15px;
+    display: inline-block;
+    width: 250px;
 }
 
-.pServices {
-    background-color: #e3e3f1; /* Couleur de fond */
-    color: #141455; /* Couleur du texte */
-    border-radius: 10px; /* Bords arrondis */
-    padding: 10px;
+@media (max-width:480px) {
+    .divViePersonnelle, .divVieProfessionnelle, .divLogement, .divHandicap, .divAccident {
+        text-align: center; /* Centre le texte */
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
 }
 
 .ImageViePersonnelle, .ImageVieProfessionnelle, .ImageLogement, .ImageHandicap, .ImageAccident {
@@ -295,7 +431,6 @@ header {
     justify-content: center; /* Centre les éléments horizontalement */
     padding-top: 15px; /* Espace en haut */
     padding-bottom: 15px; /* Espace en bas */
-    text-align: left; /* Alignement du texte à gauche */
 }
 
 /* Responsive : Réduction du gap sur petits écrans */
@@ -324,6 +459,7 @@ header {
     text-align: center; /* Centre le texte */
     margin: 0; /* Supprime les marges */
     padding: 10px;
+    font-size: 20px;
 }
 
 /* Responsive : Réduction de la taille de police sur petits écrans */
@@ -388,34 +524,36 @@ header {
 ===================================*/
 
 .divActions {
-    margin: 30px 20px 0 20px; /* Marge autour de la div */
+    margin: 30px 60px 60px; /* Marge autour de la div */
     max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
     padding: 15px; /* Espace interne */
     border: none; /* Pas de bordure */
     background-color: #e3e3f1; /* Couleur de fond */
     box-shadow: 10px 10px 20px grey; /* Ombre portée */
     border-radius: 15px; /* Bords arrondis */
-    
-}
-
-.divActions h1 {
-    margin-top: 0;
-}
-
-/* Responsive : Réduction des marges sur petits écrans */
-@media (max-width: 768px) {
-    .divActions {
-        margin: 20px 15px 0; /* Marges réduites pour tablettes */
-        padding: 10px 15px; /* Padding réduit */
-    }
 }
 
 @media (max-width: 480px) {
     .divActions {
         margin: 15px 10px 0; /* Marges réduites pour mobiles */
-        padding: 8px 10px; /* Padding réduit */
+        padding: 10px 20px; /* Padding réduit */
+        width:310px;
+        max-width: 400px;
+        flex-direction: column; /* Empile verticalement sur mobile */
     }
 }
+
+.divActions h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+@media (max-width:480px) {
+    .divActions h1 {
+        font-size: 28px;
+    }
+}
+
 
 .Actions {
     display: flex; /* Utilise Flexbox */
@@ -430,6 +568,7 @@ header {
     .Actions {
         gap: 10px; /* Gap réduit pour mobiles */
         flex-direction: column; /* Empile les boutons verticalement */
+        
     }
 }
 
@@ -445,57 +584,55 @@ header {
     cursor: pointer; /* Change le curseur au survol */
 }
 
-/* Responsive : Boutons prennent toute la largeur sur mobile */
-@media (max-width: 480px) {
-    .ButtonsActions {
-        width: 100%; /* Prend toute la largeur disponible */
-    }
-}
-
 .ButtonsActions:hover {
     background-color: white; /* Couleur de fond au survol */
     color: #141455; /* Couleur du texte au survol */
     border: #141455 3px solid;
 }
 
+/* Responsive : Boutons prennent toute la largeur sur mobile */
+@media (max-width: 480px) {
+    .ButtonsActions {
+        width: 80%; /* Prend toute la largeur disponible */
+    }
+}
+
+
+
 /*===================================
   MAGASINE
 ===================================*/
 
 .divMagasine {
-    margin: 30px 20px 0 20px; /* Marge autour de la div */
+    margin: 0px 60px 0 60px; /* Marge autour de la div */
     max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
     padding: 15px; /* Espace interne */
     border: none; /* Pas de bordure */
     background-color: #e3e3f1; /* Couleur de fond */
     box-shadow: 10px 10px 20px grey; /* Ombre portée */
     border-radius: 15px; /* Bords arrondis */
-    box-sizing: border-box; /* Inclut padding et border dans la width */
-}
-
-.divMagasine h1 {
-    margin-top: 0;
-}
-
-/* Responsive : Réduction des marges sur petits écrans */
-@media (max-width: 768px) {
-    .divMagasine {
-        margin: 20px 15px 0; /* Marges réduites pour tablettes */
-        padding: 10px 15px; /* Padding réduit */
-    }
 }
 
 @media (max-width: 480px) {
     .divMagasine {
         margin: 15px 10px 0; /* Marges réduites pour mobiles */
         padding: 8px 10px; /* Padding réduit */
+        width:330px;
+        max-width: 400px;
     }
+}
+
+.divMagasine h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 27px;
 }
 
 .PresentationMagasine {
     background-color: white; /* Couleur de fond */
     border-radius: 10px; /* Bords arrondis */
     padding: 20px; /* Espace interne */
+    margin:15px;
 }
 
 /* Responsive : Réduction du padding sur petits écrans */
@@ -535,14 +672,14 @@ header {
 }
 
 .LogoArticle {
-    display: inline-flex;
-    align-items: center; /* Aligne verticalement les éléments */
-    width: 150px; /* Largeur du logo */
-    max-width: 100%; /* S'adapte à la largeur disponible */
-    height: 40px; /* Hauteur du logo */
-    margin-top: 10px; /* Marge en haut */
-    gap: 10px; /* Espace entre l'image et le texte */
+    display: flex;
+    align-items: center;
+    width: 150px;
+    max-width: 100%;
+    height: 40px;
+    gap: 10px;
     padding: 10px;
+    margin: 10 auto; /* Centre horizontalement */
 }
 
 /* Responsive : Ajustement sur petits écrans */
@@ -567,6 +704,9 @@ header {
     border: none; /* Pas de bordure */
     border-radius: 5px; /* Bords arrondis */
     padding: 10px; /* Espace interne */
+    width:65%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* Responsive : Réduction du padding sur petits écrans */
@@ -574,6 +714,7 @@ header {
     .TitreArticle {
         padding: 8px; /* Padding réduit pour mobiles */
         font-size: 18px; /* Taille de police réduite */
+        width:95%;
     }
 }
 
@@ -582,6 +723,18 @@ header {
     border: none; /* Pas de bordure */
     border-radius: 5px; /* Bords arrondis */
     padding: 10px;
+    width:65%;
+    text-align: center;
+    margin: 10 auto;
+    font-size: 20px;
+}
+
+@media (max-width:480px) {
+    .TexteArticle {
+        padding: 8px; /* Padding réduit pour mobiles */
+        font-size: 18px; /* Taille de police réduite */
+        width:95%;
+    }
 }
 
 .DecouvrirMag {
@@ -642,33 +795,31 @@ header {
 ===================================*/
 
 .divQuestions {
-    margin: 30px 20px 0 20px; /* Marge autour de la div */
-    max-width: calc(100% - 40px); /* S'adapte à la largeur de l'écran */
+    margin: 30px 60px 0 60px; /* Marge autour de la div */
     padding: 5px 20px 20px 20px; /* Espace interne */
     border: none; /* Pas de bordure */
     background-color: #e3e3f1; /* Couleur de fond */
     box-shadow: 10px 10px 20px grey; /* Ombre portée */
     border-radius: 15px; /* Bords arrondis */
-    box-sizing: border-box; /* Inclut padding et border dans la width */
+}    
+
+@media (max-width:480px) {
+    .divQuestions {
+        width: 90%;
+    }
 }
 
 .divQuestions h1 {
     margin: 0;
     padding-top: 10px;
-}
-
-/* Responsive : Réduction des marges sur petits écrans */
-@media (max-width: 768px) {
-    .divQuestions {
-        margin: 20px 15px 0; /* Marges réduites pour tablettes */
-        padding: 10px 15px 15px; /* Padding réduit */
-    }
+    text-align: center;
 }
 
 @media (max-width: 480px) {
     .divQuestions {
         margin: 15px 10px 0; /* Marges réduites pour mobiles */
         padding: 8px 10px 10px; /* Padding réduit */
+        font-size: 14px;
     }
 }
 
@@ -679,6 +830,11 @@ header {
     padding: 10px; /* Espace interne */
     cursor: pointer; /* Change le curseur au survol */
     transition: background-color 0.3s ease; /* Transition douce */
+    margin:15px;
+    text-align: center;
+    width:60%;
+    margin: 10 auto;
+    font-size: 20px;
 }
 
 /* Responsive : Réduction du padding sur petits écrans */
@@ -690,7 +846,7 @@ header {
 }
 
 .FaqQuestion:hover {
-    background-color: #e3e3f1; /* Couleur de fond au survol */
+    background-color: whitesmoke; /* Couleur de fond au survol */
     color: #141455; /* Couleur du texte au survol */
 }
 

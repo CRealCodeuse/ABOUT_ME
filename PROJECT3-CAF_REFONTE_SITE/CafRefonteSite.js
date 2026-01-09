@@ -2,7 +2,7 @@
 const Connexion = document.querySelector('.Connexion');
 const PopUp = document.querySelector('.PopUp');
 const Fermer = document.querySelector('.Fermer');
-const FormulaireContact = document.querySelector('.FormulaireContact');
+const FormulaireConnexion = document.querySelector('.FormulaireConnexion')
 
 //OUVRIR POP UP DE CONTACT
 Connexion.addEventListener('click', () => {

@@ -16,53 +16,50 @@
 </head>
 
 <header>
-    
-    <nav>
+    <div>
+
+        <nav>
         
-    </nav>
+        </nav>
 
-    <a class="Accueil" href="../PROJECT3-CAF_REFONTE_SITE/CafRefonteSite.html">caf.fr</a>
+        <a class="Accueil" href="../PROJECT3-CAF_REFONTE_SITE/CafRefonteSite.html">caf.fr</a>
 
-    <button class="Malvoyant">
-        <img width="35" height="35" src="https://img.icons8.com/color/48/closed-eye.png" alt="closed-eye"/>
-    </button>
+        <button class="Malvoyant">
+            <img height="35" src="Images/Image - Malvoyant.png" alt="closed-eye"/>
+        </button>
 
-    <button class="Recherche">
-        <img width="35" height="35" src="https://img.icons8.com/stickers/100/search.png" alt="search"/>
-    </button>
+        <button class="Recherche">
+            <img height="35" src="https://img.icons8.com/stickers/100/search.png" alt="search"/>
+        </button>
 
-    <button class="Connexion">
-        <img width="35" height="35" src="Image - SeConnecter.png" alt="circled-user"/>
-    </button>
+        <button class="Connexion">
+            <img height="35" src="Image - SeConnecter.png" alt="circled-user"/>
+        </button>
+
+    </div>
 
     <div class="PopUp">
 
         <div class="ContenuPopUp">
 
-            <h1>BIENVENUE SUR LE PORTAIL DES ALLOCATIONS FAMILIALES</h1>
-
             <span class="Fermer">&times;</span>
 
-            <h2 class="TitrePopUp">
-                CONNEXION ALLOCATAIRE
-            </h2>
+            <h1 class="TitrePopUp">BIENVENUE SUR LE PORTAIL DES ALLOCATIONS FAMILIALES</h1>
+                                    
+            <form class="FormulaireConnexion">
 
-            <form action="FormulaireContact">
+                <h2>CONNEXION ALLOCATAIRE</h2>
 
                 <h3>Avec vos identifiants Caf</h3>
 
                 <h4>Tous les champs sont obligatoires, sauf mention du contraire.</h4>
 
-                <label for="NumSecuSociale">
-                    Numéro de sécurité sociale :
-                </label>
+                <label for="NumSecuSociale">Numéro de sécurité sociale :</label>
                 <br>
                 <input type="text" class="NumSecuSociale" name="NumSecuSociale" pattern="[0-9]*" maxlength="13" placeholder="Numéro de sécurité sociale" inputmode="numeric" required>
                 <br>
 
-                <label for="MotDePasse">
-                    Mot de passe :
-                </label>
+                <label for="MotDePasse">Mot de passe :</label>
                 <br>
                 <input type="password" class="MotDePasse" name="MotDePasse" minlength="8" maxlength="64" required>
                 <br>
@@ -99,9 +96,14 @@
         <h1 class="TitreDescription">Bienvenue sur le site de la Caisse d'Allocations Familiales</h1>
 
         <p class="TexteDescription">
-            La Caisse d'Allocations Familiales (CAF) est un organisme public français qui fait partie du système de sécurité sociale. 
-            Sa mission principale est de fournir des prestations sociales aux familles et aux individus afin de soutenir leur bien-être et leur qualité de vie.<br>
+            La Caisse d'Allocations Familiales (CAF) est un organisme public français qui fait partie du système de sécurité sociale. <br>
+
             <br>
+
+            Sa mission principale est de fournir des prestations sociales aux familles et aux individus afin de soutenir leur bien-être et leur qualité de vie.<br>
+
+            <br>
+
             La CAF gère un large éventail d'allocations et d'aides financières destinées à répondre aux besoins spécifiques des 
             allocataires. Notamment en matière de logement, de famille, d'enfance, de solidarité et d'insertion sociale.
         </p>
@@ -112,7 +114,7 @@
 
         <div class="divH1Image">
             <h1 class="InfoTitre">A la une en ce moment</h1>
-            <img class="ImageInformation" width="100" height="100" src="icons8-informations-100.png" alt="Nouveautés"/>
+            <img class="ImageInformation" width="90" height="90" src="icons8-informations-100.png" alt="Nouveautés"/>
         </div>
 
         <div class="InformationsGrid">
@@ -163,23 +165,7 @@
 
                     <div class="ImageViePersonnelle">
 
-                        <p class="pServices">
-                            - Couple <br>
-                            - Grossesse <br>
-                            - Enfant <br>
-                            
-
-                        </p>
-
-                        <img src="Images/Image - Famille.png" alt="Image Handicap" height="120">
-
-                        <p class="pServices">
-
-                            - Séparation <br>
-                            - Mode de garde <br>
-                            - Etudes
-                            
-                        </p>
+                        <img src="Images/Image - Famille.png" alt="Image Handicap" height="110">
                         
                     </div>
                     
@@ -195,19 +181,7 @@
 
                     <div class="ImageVieProfessionnelle">
 
-                        <p class="pServices">
-                            - Emploi <br>
-                            - RSA <br>
-                            - Prime d'activité
-                        </p>
-
                         <img src="Images/Image - Vie professionnelle.png" alt="Image Vie Professionnelle" height="110">
-
-                        <p class="pServices">
-                            - Travailleur non salarié <br>
-                            - Travailleur à l'étranger <br>
-                            - Retraite
-                        </p>
 
                     </div>
 
@@ -223,18 +197,8 @@
 
                     <div class="ImageLogement">
 
-                        <p class="pServices">
-                            - Aides au logement <br>
-                            - Déménagement <br>
-                            - Etudiant
-                        </p>
-
                         <img src="Images/Image - Logement.png" alt="Image Logement" height="110">
                         
-                        <p class="pServices">
-                            - Colocation <br>
-                            - Hébergement
-                        </p>
                     </div>
                     
                     <h2 class="TitresServices">Logement</h2>
@@ -249,17 +213,7 @@
 
                     <div class="ImageHandicap">
 
-                        <p class="pServices">
-                            - Allocation aux adultes handicapés <br>
-                            - Services et aides par le travail
-                        </p>
-
                         <img src="Images/Image - Handicap.png" alt="Image Vie Professionnelle" height="110">
-
-                        <p class="pServices">
-                            - Parent d'un enfant handicapé <br>
-                            - Aidant
-                        </p>
                         
                     </div>
 
@@ -275,18 +229,7 @@
 
                     <div class="ImageAccident">
 
-                        <p class="pServices">
-                            - Hospitalisation <br>
-                            - Décès d'un adulte <br>
-                            - Décès d'un enfant
-                        </p>
-
                     <img src="Images/Image - Accident.png" alt="Image Vie Professionnelle" height="110">
-
-                        <p class="pServices">
-                            - Réinsertion <br>
-                            - Solidarité
-                        </p>
                     
                     </div>
 
@@ -493,6 +436,8 @@
         <button class="BoutonQuestions">Voir toutes les questions</button>
 
     </div>
-    
+
+    <script src="../PROJECT3-CAF_REFONTE_SITE/CafRefonteSite.js"></script>
+
 </body>
 </html>
