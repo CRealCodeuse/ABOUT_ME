@@ -46,6 +46,12 @@ header {
     height: 65px;
 }
 
+@media (max-width:480px) {
+    header {
+        width: 360px;
+    }
+}
+
 .Accueil { 
     color: white; /* Couleur du texte */
     font-family: 'Oswald', sans-serif; /* Police */
@@ -146,8 +152,6 @@ header {
     .TitrePopUp {
         margin: 30px 5px 5px 5px;
         padding: 15px;
-        font-size: 22px;
-
     }
 }
 
@@ -205,7 +209,7 @@ header {
 
 @media (max-width:480px) {
     .divDescription {
-        width:350px;
+        width:360px;
         max-width: 400px;
         margin: 10px 5px;
     }
@@ -217,6 +221,7 @@ header {
     border-radius: 10px; /* Bords arrondis */
     text-align: center; /* Centre le texte */
     padding: 10px; /*Espace autour du titre*/
+    font-size: 25;
 }
 
 @media (max-width:480px) {
@@ -236,7 +241,7 @@ header {
     max-width: 50%;
     margin-left: 25%;
     margin-right: 25%;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 @media (max-width:480px) {
@@ -244,7 +249,7 @@ header {
         margin: 10px;
         max-width: 90%;
         padding: 20px;
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
@@ -267,7 +272,7 @@ header {
 
 @media (max-width: 480px) {
     .divInformations {
-        width:350px;
+        width:360px;
         max-width: 400px;
         margin: 10px 5px;
         flex-direction: column; /* Empile verticalement sur mobile */
@@ -283,53 +288,47 @@ header {
 .InfoTitre {
     text-align: center; /* Centre le texte */
     width: 95%; /* Prend toute la largeur */
-    background-color: #141455; /* Couleur de fond */  
-    color: white; /* Couleur du texte */
     border-radius: 20px; /* Bords arrondis */
-    padding:10px;
+    padding:15px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 @media (max-width:480px) {
     .InfoTitre {
-        font-size: 23px;
         text-align: center;
         padding: 15px;
-        width:90%;
+        width:100%;
+        margin-left: -15px;
     }
 }
 
 .imageInformation {
-    display: inline-block; /* Met l'image en inline */
-    vertical-align: middle; /* Aligne avec le h1 */
+    padding-top: 5px;
 }
 
-/* Responsive : Réduction du padding sur petits écrans */
-@media (max-width: 768px) {
-    .imageInformation {
-        padding-left: 40px; /* Padding réduit pour tablettes */
-    }
+.InformationsGrid {
+    text-align: center;
+    padding-bottom: 15px;
 }
 
 @media (max-width: 480px) {
     .imageInformation {
         padding-left: 10px; /* Padding réduit pour mobiles */
         text-align: center; /* Centre l'image */
-    }
-    
-    .imageInformation img {
         max-width: 100%; /* L'image ne dépasse pas son conteneur */
         height: auto; /* Garde les proportions */
     }
-}
 
-.InformationsGrid {
-    text-align: center;
+    .InformationsGrid {
+        padding-bottom:0;
+    }
 }
 
 .Information {
     font-family: 'Oswald', sans-serif; /* Police */
     font-size: 15px; /* Taille de la police */
-    margin: 10px 0 15px 0; /* Marges autour de l'information */
+    margin: 10px 0 10px 0; /* Marges autour de l'information */
     width: 95%; /* Prend toute la largeur disponible */
     max-width: 900px; /* Largeur maximale */
     border: none; /* Pas de bordure */
@@ -343,15 +342,6 @@ header {
     color: white; /* Couleur du texte au survol */
 }
 
-@media (max-width: 480px) {
-    .Information {
-        width: 95%; /* 95% de la largeur sur mobiles */
-        margin: 10px auto; /* Centre l'élément */
-        font-size: 13px; /* Taille de police réduite */
-        color: black;
-    }
-}
-
 .Information p {
     margin: 0px;
     font-size: 20px;
@@ -360,6 +350,26 @@ header {
 .Information h2 {
     margin: 10px;
 }
+
+@media (max-width: 480px) {
+    .Information {
+        width: 95%; /* 95% de la largeur sur mobiles */
+        margin: 10px auto; /* Centre l'élément */
+        color: white;
+        background-color: #141455;
+    }
+
+    .Information h2 {
+        font-size: 21px;
+    }
+
+    .Information p {
+        font-size: 20px;
+        padding: 0 10px 10px 10px;
+    }
+}
+
+
 
 /*===================================
   SERVICES
@@ -378,38 +388,33 @@ header {
     text-align: center;
 }
 
-/* Responsive : Réduction des marges sur petits écrans */
-@media (max-width: 768px) {
-    .divServices {
-        width:350px;
-        max-width: 400px;
-        margin: 10px 5px;
-        flex-direction: column; /* Empile verticalement sur mobile */
-        padding: 15px;
-    }
-}
-
 .Servicesh1 {
-    padding-top: 10px;
+    padding: 15px;
+    margin-bottom: 0;
     
 }
 
 @media (max-width:480px) {
     .Servicesh1 {
         font-size: 28px;
+        margin: 0;
     }
 }
 
 @media (max-width: 480px) {
     .divServices {
-        margin: 15px 10px 0; /* Marges réduites pour mobiles */
-        padding: 0 10px 10px; /* Padding réduit */
+        margin: 10px 5px; /* Marges réduites pour mobiles */
+        padding: 10px 10px; /* Padding réduit */
+        display: flex;
+        flex-direction: column; /* Empile verticalement sur mobile */
+        width:360px;
+        max-width: 400px;
     }
 }
 
 .divViePersonnelle, .divVieProfessionnelle, .divLogement, .divHandicap, .divAccident {
     text-align: center; /* Centre le texte */
-    margin: 15px;
+    margin: 5px 15px 20px 15px;
     display: inline-block;
     width: 250px;
 }
@@ -419,7 +424,7 @@ header {
         text-align: center; /* Centre le texte */
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 310px;
     }
 }
 
@@ -535,9 +540,9 @@ header {
 
 @media (max-width: 480px) {
     .divActions {
-        margin: 15px 10px 0; /* Marges réduites pour mobiles */
-        padding: 10px 20px; /* Padding réduit */
-        width:310px;
+        margin: 15px 5px; /* Marges réduites pour mobiles */
+        padding: 10px 20px 15px 20px; /* Padding réduit */
+        width:320px;
         max-width: 400px;
         flex-direction: column; /* Empile verticalement sur mobile */
     }
@@ -551,6 +556,7 @@ header {
 @media (max-width:480px) {
     .divActions h1 {
         font-size: 28px;
+        margin-top: 10px;
     }
 }
 
@@ -597,8 +603,6 @@ header {
     }
 }
 
-
-
 /*===================================
   MAGASINE
 ===================================*/
@@ -615,9 +619,9 @@ header {
 
 @media (max-width: 480px) {
     .divMagasine {
-        margin: 15px 10px 0; /* Marges réduites pour mobiles */
-        padding: 8px 10px; /* Padding réduit */
-        width:330px;
+        margin: 15px 10px 0 5px; /* Marges réduites pour mobiles */
+        padding: 8px 5px; /* Padding réduit */
+        width: 350px;
         max-width: 400px;
     }
 }
@@ -625,7 +629,12 @@ header {
 .divMagasine h1 {
     margin-top: 0;
     text-align: center;
-    font-size: 27px;
+}
+
+@media (max-width:480px) {
+    .divMagasine h1 {
+        font-size: 28px;
+    }
 }
 
 .PresentationMagasine {
@@ -741,7 +750,7 @@ header {
     font-family: "Oswald", sans-serif; /* Police */
     font-weight: 500; /* Poids de la police */
     font-size: 25px; /* Taille de la police */
-    padding: 10px; /* Espace interne */
+    padding: 15px; /* Espace interne */
     border: none; /* Pas de bordure */
     background-color: #141455; /* Couleur de fond */
     color: white; /* Couleur du texte */
@@ -753,21 +762,6 @@ header {
     box-sizing: border-box; /* Inclut padding et border dans la width */
 }
 
-.BoutonQuestions {
-    font-family: "Oswald", sans-serif; /* Police */
-    font-weight: 500; /* Poids de la police */
-    font-size: 25px; /* Taille de la police */
-    padding: 10px; /* Espace interne */
-    border: none; /* Pas de bordure */
-    background-color: #141455; /* Couleur de fond */
-    color: white; /* Couleur du texte */
-    border-radius: 15px; /* Bords arrondis */
-    display: block; /* Affichage en bloc */
-    margin: 10px auto 0; /* Centre le bouton avec marge en haut */
-    width: 270px; /* Largeur maximale */
-    cursor: pointer; /* Change le curseur au survol */
-    box-sizing: border-box; /* Inclut padding et border dans la width */
-}
 
 /* Responsive : Adaptation sur différents écrans */
 @media (max-width: 768px) {
@@ -779,9 +773,10 @@ header {
 
 @media (max-width: 480px) {
     .DecouvrirMag, .BoutonQuestions {
-        font-size: 20px; /* Taille réduite pour mobiles */
-        padding: 8px; /* Padding réduit */
+        font-size: 25px; /* Taille réduite pour mobiles */
+        padding: 10px; /* Padding réduit */
         max-width: 100%; /* Prend toute la largeur disponible */
+        margin: 15px auto;
     }
 }
 
@@ -811,14 +806,14 @@ header {
 
 .divQuestions h1 {
     margin: 0;
-    padding-top: 10px;
+    padding: 10px 0;
     text-align: center;
 }
 
 @media (max-width: 480px) {
     .divQuestions {
         margin: 15px 10px 0; /* Marges réduites pour mobiles */
-        padding: 8px 10px 10px; /* Padding réduit */
+        padding: 8px 15px 10px; /* Padding réduit */
         font-size: 14px;
     }
 }
@@ -841,8 +836,9 @@ header {
 /* Responsive : Réduction du padding sur petits écrans */
 @media (max-width: 480px) {
     .FaqQuestion {
-        padding: 8px; /* Padding réduit pour mobiles */
+        padding: 15px; /* Padding réduit pour mobiles */
         font-size: 18px; /* Taille de police réduite */
+        width: fit-content;
     }
 }
 
@@ -867,6 +863,22 @@ header {
     }
 }
 
+.BoutonQuestions {
+    font-family: "Oswald", sans-serif; /* Police */
+    font-weight: 500; /* Poids de la police */
+    font-size: 25px; /* Taille de la police */
+    padding: 10px; /* Espace interne */
+    border: none; /* Pas de bordure */
+    background-color: #141455; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border-radius: 15px; /* Bords arrondis */
+    display: block; /* Affichage en bloc */
+    margin: 15px auto; /* Centre le bouton avec marge en haut */
+    width: 270px; /* Largeur maximale */
+    cursor: pointer; /* Change le curseur au survol */
+    box-sizing: border-box; /* Inclut padding et border dans la width */
+}
+
 /*===================================
   AIDANTS ET ACCOMPAGNANTS
 ===================================*/
@@ -883,11 +895,13 @@ header {
 
 @media (max-width:480px) {
     .divAidantsNumeriques {
-        width: 90%;
+        margin: 15px 5px; /* Marges réduites pour mobiles */
+        padding: 8px 10px; /* Padding réduit */
+        width:340px;
+        max-width: 400px;
+        flex-direction: column;
     }
 }
-
-
 
 .divGauche {
     background: none;
@@ -897,6 +911,12 @@ header {
     padding: 15px;
     margin-top: 15px;
     border-radius: 10px;
+}
+
+@media (max-width:480px) {
+    .divGauche {
+        width: fit-content;
+    }
 }
 
 .TitreAidants {
@@ -917,6 +937,15 @@ header {
     font-size: 18px;
 }
 
+@media (max-width:480px){
+    .BoutonAccesEspace {
+        display: block;
+        margin: 0 auto;
+        font-size: 25px;
+        padding: 15px;
+    }
+}
+
 .divDroite {
     background-color: whitesmoke;
     border-radius: 10px;
@@ -924,6 +953,18 @@ header {
     margin: 15px;
     text-align: center;
     width: 40%;
+}
+
+@media (max-width:480px) {
+    .divDroite {
+        width: fit-content;
+        margin: 10px 0px;
+        border: 3px solid #141455;
+    }
+
+    .divDroite p {
+        font-size: 18px;
+    }
 }
 
 .TexteAccompagnansts {
@@ -943,4 +984,10 @@ header {
     padding: 15px;
     border-radius: 10px;
     width:fit-content
+}
+
+@media (max-width:480px) {
+    .LienRubriqueAccompagnants strong {
+        font-size: 18px;
+    }
 }
