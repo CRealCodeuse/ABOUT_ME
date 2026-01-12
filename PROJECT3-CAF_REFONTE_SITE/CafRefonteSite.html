@@ -48,40 +48,32 @@
                                     
             <form class="FormulaireConnexion">
 
-                <h2>CONNEXION ALLOCATAIRE</h2>
+                <h2 class="FormulaireTitre2">CONNEXION ALLOCATAIRE</h2>
 
-                <h3>Avec vos identifiants Caf</h3>
+                <h3 class="FormulaireTitre2">Avec vos identifiants Caf</h3>
 
-                <h4>Tous les champs sont obligatoires, sauf mention du contraire.</h4>
+                <p class="FormulaireAttention">*Tous les champs sont obligatoires, sauf mention du contraire.</p>
 
                 <label for="NumSecuSociale">Numéro de sécurité sociale :</label>
                 <br>
-                <input type="text" class="NumSecuSociale" name="NumSecuSociale" pattern="[0-9]*" maxlength="13" placeholder="Numéro de sécurité sociale" inputmode="numeric" required>
+                <input type="text" class="NumSecuSociale" name="NumSecuSociale" pattern="[0-9]*" maxlength="13" placeholder="Ex : 1 23 45 67 890 123 45" inputmode="numeric" required>
                 <br>
 
                 <label for="MotDePasse">Mot de passe :</label>
                 <br>
-                <input type="password" class="MotDePasse" name="MotDePasse" minlength="8" maxlength="64" required>
+                <input type="password" class="MotDePasse" name="MotDePasse" minlength="8" maxlength="64" placeholder="***********" required>
                 <br>
 
-                <button>Se connecter</button>
+                <button class="BoutonSC">Se connecter</button>
     
             </form>
 
-            <h3>OU</h3>
-
-                <h3>Avec FranceConnect</h3>
-
-                <p>FranceConnect est une solution proposée par l'Etat pour sécuriser et simplifier la connexion à vos services en ligne.</p>
+            <h3 class="FormulaireTitre2">OU : Avec FranceConnect</h3>
 
                 <button class="BoutonFC">
                     <img src="Images/Logo - FranceConnect.png" alt="Image Bouton France Connect" width="200px">
                 </button>
                 <br>
-
-                <a class="LienConnaitreFC" href="ConnaitreFC">Qu'est ce que France Connect ?</a>
-
-                <h2>AUTRES ESPACES</h2>
                 
         </div>
 

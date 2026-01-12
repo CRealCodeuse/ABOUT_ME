@@ -152,6 +152,7 @@ header {
     .TitrePopUp {
         margin: 30px 5px 5px 5px;
         padding: 15px;
+        font-size: 22px;
     }
 }
 
@@ -177,13 +178,66 @@ header {
     color:#000;
 }
 
+.FormulaireTitre2 {
+    color: #141455;
+}
+
+.FormulaireAttention {
+    color: red;
+}
+
 .FormulaireConnexion label {
     font-family: "Oswald";
     display: block;
     margin-top: 15px;
+    font-size: 18px;
+    color: #141455;
 }
 
+.FormulaireConnexion input {
+    height: 30px;
+    width: 200px;
+    background-color: whitesmoke;
+    border: 2px solid #141455;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    text-align: center;
+}
 
+.BoutonSC {
+    margin-top: 25px;
+    display: flex;
+    margin-left: auto;
+    padding: 10px;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    color: #e3e3f1;
+    background-color: #141455;
+    border-radius: 10px;
+    transition: background-color 0.3s ease; /* Transition douce */
+}
+
+.BoutonSC:hover {
+    background-color: #e3e3f1;
+    border: 2px solid #141455;
+    color: #141455;
+    cursor: pointer;
+}
+
+.BoutonFC {
+    display: flex;
+    margin-left: auto;
+    border:none;
+    background-color: #e3e3f1;
+    transition: background-color 0.3s ease; /* Transition douce */
+}
+
+.BoutonFC:hover {
+    border: 2px solid #141455;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
 .Recherche { 
     background-color: #141455; /* Couleur de fond */
@@ -233,7 +287,7 @@ header {
 
 .TexteDescription {
     background-color: whitesmoke; /* Couleur de fond */
-    border: none; /* Pas de bordure */
+    border: 3px solid #141455; /* Pas de bordure */
     padding: 15px;
     max-width: 50%;
     margin-left: 25%;
@@ -669,6 +723,7 @@ header {
     background-color: white; /* Couleur de fond */
     padding: 20px; /* Espace interne */
     margin:15px;
+    border: 3px solid #141455;
 }
 
 /* Responsive : Réduction du padding sur petits écrans */
@@ -995,13 +1050,13 @@ header {
     margin-left: 15px;
     text-align: center;
     width: 40%;
+    border: 3px solid #141455;
 }
 
 @media (max-width:480px) {
     .divDroite {
         width: fit-content;
         margin: 10px 0px;
-        border: 3px solid #141455;
     }
 
     .divDroite p {
