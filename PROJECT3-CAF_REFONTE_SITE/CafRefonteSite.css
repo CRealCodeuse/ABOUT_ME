@@ -322,6 +322,7 @@ header > div:first-child {
     justify-content: center; /* Centre les liens */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     z-index: 100;
+    border: 3px solid #141455;
 }
 
 /* NAVIGATION ACTIVE = VISIBLE */
@@ -626,7 +627,7 @@ header > div:first-child {
 }
 
 .TexteDescription {
-    background-color: whitesmoke; /* Couleur de fond */
+    background-color: #e3e3f1; /* Couleur de fond */
     border: 3px solid #141455; /* Pas de bordure */
     padding: 15px;
     max-width: 50%;
