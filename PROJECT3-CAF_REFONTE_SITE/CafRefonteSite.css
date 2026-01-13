@@ -338,6 +338,7 @@ header > div:first-child {
     padding: 10px 15px;
     transition: all 0.3s;
     white-space: nowrap; /* Empêche le retour à la ligne */
+    font-size: 18px;
 }
 
 .LiensNavigation a:hover {
@@ -749,6 +750,7 @@ header > div:first-child {
     color: #141455; /* Couleur du texte au survol */
     border: 3px solid #141455;
     background-color: #e3e3f1;
+    cursor: pointer;
     
 }
 
@@ -1393,6 +1395,7 @@ header > div:first-child {
     background-color: #e3e3f1; /* Couleur de fond au survol */
     color: #141455; /* Couleur du texte au survol */
     border: 2px solid #141455;
+    cursor: pointer;
 }
 
 @media (max-width:480px){
@@ -1577,6 +1580,7 @@ header > div:first-child {
         background-color: #b9b9dd;
         color: black;
         width: fit-content;
+        cursor: pointer;
     }
 
     /*===================================
@@ -1594,4 +1598,5 @@ header > div:first-child {
         padding:5px;
         background-color: #b9b9dd;
         color: black;
+        cursor: pointer;
     }
