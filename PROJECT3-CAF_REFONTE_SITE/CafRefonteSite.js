@@ -89,3 +89,72 @@ window.addEventListener('click', (e) => {
         PopUpCongeNaissance.style.display = 'none';
     }
 });
+
+////////////POP AIDES 2026 /////////////////////////
+
+const Aides2026 = document.querySelector('.Information2');
+const PopUpAides2026 = document.querySelector('.PopUpAides2026');
+const FermerAides2026 = document.querySelector('.FermerAides2026');
+
+//OUVRIR POP UP DE CONTACT
+Aides2026.addEventListener('click', () => {
+    PopUpAides2026.style.display = 'block';   
+});
+
+//FERMER POP UP DE CONTACT
+FermerAides2026.addEventListener('click', () => {
+   PopUpAides2026.style.display = 'none'; 
+});
+
+//FERMER POP UP EN CLIQUANT EN DEHORS DE CELLE-CI
+window.addEventListener('click', (e) => {
+    if (e.target === PopUpAides2026) {
+        PopUpAides2026.style.display = 'none';
+    }
+});
+
+////////////POP UP PRIMES NOEL 2025////////////////////////
+
+const PrimeNoel2025 = document.querySelector('.Information3');
+const PopUpPrimeNoel2025 = document.querySelector('.PopUpPrimeNoel2025');
+const FermerPrimeNoel2025 = document.querySelector('.FermerPrimeNoel2025');
+
+//OUVRIR POP UP DE CONTACT
+PrimeNoel2025.addEventListener('click', () => {
+    PopUpPrimeNoel2025.style.display = 'block';   
+});
+
+//FERMER POP UP DE CONTACT
+FermerPrimeNoel2025.addEventListener('click', () => {
+   PopUpPrimeNoel2025.style.display = 'none'; 
+});
+
+//FERMER POP UP EN CLIQUANT EN DEHORS DE CELLE-CI
+window.addEventListener('click', (e) => {
+    if (e.target === PopUpPrimeNoel2025) {
+        PopUpPrimeNoel2025.style.display = 'none';
+    }
+});
+
+////////////////POP UP CYBERATTAQUE////////////////////
+
+const Cyberattaque = document.querySelector('.Information4');
+const PopUpCyberattaque = document.querySelector('.PopUpCyberattaque');
+const FermerCyberattaque = document.querySelector('.FermerCyberattaque');
+
+//OUVRIR POP UP DE CONTACT
+Cyberattaque.addEventListener('click', () => {
+    PopUpCyberattaque.style.display = 'block';   
+});
+
+//FERMER POP UP DE CONTACT
+FermerCyberattaque.addEventListener('click', () => {
+   PopUpCyberattaque.style.display = 'none'; 
+});
+
+//FERMER POP UP EN CLIQUANT EN DEHORS DE CELLE-CI
+window.addEventListener('click', (e) => {
+    if (e.target === PopUpCyberattaque) {
+        PopUpCyberattaque.style.display = 'none';
+    }
+});

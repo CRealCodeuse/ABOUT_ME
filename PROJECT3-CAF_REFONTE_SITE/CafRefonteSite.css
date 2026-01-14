@@ -783,6 +783,38 @@ header > div:first-child {
     }
 }
 
+.ToutesLesActualites {
+    padding:15px;
+    width: fit-content;
+    background-color: #141455;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    display: block; /* Affichage en bloc */
+    margin: 0 auto 15px; /* Centre le bouton avec marge en haut */
+    width: 250px; /* Largeur maximale */
+    cursor: pointer; /* Change le curseur au survol */
+    box-sizing: border-box; /* Inclut padding et border dans la width */
+    transition: background-color 0.3s ease; /* Transition douce */
+
+}
+
+.ToutesLesActualites:hover {
+    color: #141455;
+    border: 2px solid #141455;
+    background-color: #e3e3f1;
+}
+
+@media (max-width:480px) {
+    .ToutesLesActualites {
+        padding: 10px;
+        font-size: 18px;
+        margin: 10px auto 10px;
+    }
+}
+
 /*===================================
   POP UP CONGE NAISSANCE
 ===================================*/
@@ -791,7 +823,7 @@ header > div:first-child {
     POP UP CONGE NAISSANCE
     ===================================*/
 
-.PopUpCongeNaissance {
+.PopUpCongeNaissance, .PopUpAides2026, .PopUpPrimeNoel2025, .PopUpCyberattaque {
     display: none;
     position: fixed;
     z-index: 1000;
@@ -806,7 +838,7 @@ header > div:first-child {
 
 /* TABLETTE */
 @media (max-width: 768px) {
-    .ContenuPopUpCongeNaissance {
+    .ContenuPopUpCongeNaissance, .ContenuPopUpAides2026, .ContenuPopUpPrimeNoel2025, .ContenuPopUpCyberattaque {
         width: 95%;
         padding: 30px;
         margin: 20px auto;
@@ -816,7 +848,7 @@ header > div:first-child {
 
 /* MOBILE */
 @media (max-width: 480px) {
-    .ContenuPopUpCongeNaissance {
+    .ContenuPopUpCongeNaissance, .ContenuPopUpAides2026, .ContenuPopUpPrimeNoel2025, .ContenuPopUpCyberattaque {
         width: 100%; /* Prend toute la largeur disponible */
         max-width: 100%; /* Enlève la limite */
         padding: 15px;
@@ -831,7 +863,7 @@ header > div:first-child {
     CONTENU POP UP
     ===================================*/
 
-.ContenuPopUpCongeNaissance {
+.ContenuPopUpCongeNaissance, .ContenuPopUpAides2026, .ContenuPopUpPrimeNoel2025, .ContenuPopUpCyberattaque {
     background-color:#e3e3f1;
     margin: 30px auto;
     padding: 50px;
@@ -845,7 +877,7 @@ header > div:first-child {
 }
 
 @media (max-width:480px) {
-    .ContenuPopUpCongeNaissance {
+    .ContenuPopUpCongeNaissance, .ContenuPopUpAides2026, .ContenuPopUpPrimeNoel2025, .ContenuPopUpCyberattaque {
         background-color:#e3e3f1;
         margin: 10% auto;
         padding: 20px;
@@ -862,7 +894,7 @@ header > div:first-child {
     TITRE POP UP
     ===================================*/
 
-.TitrePopUpCongeNaissance {
+.TitrePopUpCongeNaissance, .TitrePopUpAides2026, .TitrePopUpPrimeNoel2025, .TitrePopUpCyberattaque {
     background-color: #141455;
     color: white;
     padding: 15px;
@@ -871,7 +903,7 @@ header > div:first-child {
 }
 
 @media (max-width:480px) {
-    .TitrePopUpCongeNaissance {
+    .TitrePopUpCongeNaissance, .TitrePopUpAides2026, .TitrePopUpPrimeNoel2025, .TitrePopUpCyberattaque {
         margin: 30px 5px 5px 5px;
         padding: 15px;
         font-size: 22px;
@@ -882,7 +914,7 @@ header > div:first-child {
     ICONE FERMER POP UP
     ===================================*/
 
-.FermerCongeNaissance {
+.FermerCongeNaissance, .FermerAides2026, .FermerPrimeNoel2025, .FermerCyberattaque {
     position: absolute;
     right: 30px;
     top: 5px;
@@ -893,14 +925,14 @@ header > div:first-child {
 }
 
 @media (max-width:480px) {
-    .FermerCongeNaissance {
+    .FermerCongeNaissance, .FermerAides2026, .FermerPrimeNoel2025, .FermerCyberattaque {
         position: absolute;
         right: 15px;
         top: 5px;
     }
 }
 
-.FermerCongeNaissance:hover {
+.FermerCongeNaissance:hover, .FermerAides2026:hover, .FermerPrimeNoel2025:hover, .FermerCyberattaque:hover {
     color:#000;
 }
 
@@ -908,12 +940,32 @@ header > div:first-child {
     POP UP TITRE CONNEXION ALLOCATAIRE + IDENTIFIANTS CAF
     ====================================================*/
 
-.QuestionCongeNaissance {
+.QuestionCongeNaissance, .QuestionAides2026, QuestionPrimeNoel2025, .QuestionCyberattaque {
     color: #141455;
 }
 
-.ReponseCongeNaissance {
+.ReponseCongeNaissance, .ReponseAides2026, .ReponsePrimeNoel2025, .ReponseCyberattaque {
     color: black;
+}
+
+    /*===================================================
+    IMAGES 
+    ===================================================*/
+
+.divMontant {
+    display: inline-block;
+}
+
+.MontantsMetropoleDOM, .MontantMayotte {
+    margin:15px;
+    border: 2px solid #141455;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .MontantsMetropoleDOM, .MontantMayotte {
+        width: 90%;
+    }
 }
 
 /*===================================
