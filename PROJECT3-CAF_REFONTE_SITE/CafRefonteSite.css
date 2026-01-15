@@ -1711,7 +1711,7 @@ header > div:first-child {
 }
 
 .X {
-    background-color: whitesmoke;
+    background-color: white;
     padding: 8px; /* Réduit le padding */
     cursor: pointer;
     display: inline-flex; /* Important ! */
@@ -1726,7 +1726,7 @@ header > div:first-child {
 }
 
 .NousContacter {
-    background-color: #e3e3f1;
+    background-color: white;
     color: black;
     border: none;
     padding: 20px 8px; /* Réduit le padding */
