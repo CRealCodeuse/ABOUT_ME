@@ -218,7 +218,6 @@ header { /*Propriétés de l'en-tête*/
     height: auto;
     flex-shrink: 0;
     margin-top: 20px;
-    border-radius: 60px;
     border:black 3px solid;
     margin: 10px 0 15px 0;
     column-span: 1;
@@ -251,15 +250,14 @@ header { /*Propriétés de l'en-tête*/
 
 .TitreBienvenue {
     background-color: whitesmoke;
-    padding: 5px;
+    padding: 15px;
     width: fit-content;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .TexteBienvenue {
     background-color: whitesmoke;
     padding: 15px;
-    border-radius: 10px;
 }
 
 /**********TITRES MES PROJETS ET CE QUE J'UTILISE***********/
@@ -316,7 +314,6 @@ header { /*Propriétés de l'en-tête*/
 
 .ProjetDroite {
     background-color: whitesmoke;
-    border-radius: 10px;
 }
 
 @media (max-width:480px) {
@@ -355,7 +352,6 @@ header { /*Propriétés de l'en-tête*/
     display:block;
     margin: 0 auto 20px; /* Centre l'image */
     border: black 2px solid; /*bordure de la capture d'écran*/
-    border-radius: 20px; /*bords arrondis de la capture d'écran*/
 }
 
 @media (max-width:480px) {
@@ -428,7 +424,6 @@ header { /*Propriétés de l'en-tête*/
 .CompetencesOutils {
     background-color: whitesmoke ;
     border: none;
-    border-radius: 10px;
     padding: 15px;
 }
 
