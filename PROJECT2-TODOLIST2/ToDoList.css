@@ -14,6 +14,18 @@ header { /*ENTETE DE LA PAGE*/
     margin-bottom: 10px; /*espace autour de la bordure du bas*/
 }
 
+@media (max-with: 769px){
+    header {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:460px){
+    header {
+        font-size: 25px;
+    }
+}
+
 body { /*CORPS DE LA PAGE*/
     background-color: antiquewhite; /*Couleur de fond de la page*/
 }
@@ -74,6 +86,20 @@ button { /*bouton*/
     border-radius: 10px; /*arrondissement des coins du bouton*/
     font-size: 20px; /*taille de la police*/
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.9); /* Ombre */
+}
+
+@media (max-width:769px) {
+    button { 
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 button:hover{ /*Effet au survol du bouton*/
