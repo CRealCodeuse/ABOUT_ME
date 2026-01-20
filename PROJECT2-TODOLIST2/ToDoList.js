@@ -429,41 +429,49 @@ const Theme = document.querySelector('button[class="Theme"]'); // Sélectionner 
 
 let isDarkMode = false; // Variable pour suivre l'état du thème
 
-Theme.addEventListener('click', function() { // Au clic sur le bouton
-    if (!isDarkMode) { // Si le mode sombre n'est pas activé
-        document.body.style.backgroundColor = '#121212'; // Couleur de fond sombre
-        document.body.style.color = '#FFFFFF'; // Couleur de texte claire
+Theme.addEventListener('click', function() {
+    // Vérifier la langue actuelle
+    const AnglaisButton = document.querySelector('.Anglais');
+    const isEnglish = AnglaisButton && AnglaisButton.classList.contains('clicked');
+    
+    if (!isDarkMode) { // Activer le mode sombre
+        document.body.style.backgroundColor = '#121212';
+        document.body.style.color = '#FFFFFF';
         
         // Garder le header en noir
-        const header = document.querySelector('header'); // Sélectionner le header
-        if (header) { // Si le header existe
-            header.style.color = '#000000'; // Couleur de texte noire
+        const header = document.querySelector('header');
+        if (header) {
+            header.style.color = '#000000';
         }
         
         // Changer les cellules blanches en grises
-        const cells = document.querySelectorAll('td'); // Sélectionner toutes les cellules
-        cells.forEach(cell => { // Pour chaque cellule
-            cell.style.backgroundColor = '#c5c5c5ff'; // Gris foncé
+        const cells = document.querySelectorAll('td');
+        cells.forEach(cell => {
+            cell.style.backgroundColor = '#c5c5c5ff';
         });
         
-        Theme.textContent = 'Thème clair'; // Changer le texte du bouton
-    } else { // Si le mode sombre est activé
-        document.body.style.backgroundColor = ''; // Réinitialiser au CSS original
-        document.body.style.color = ''; // Réinitialiser au CSS original
+        // Adapter le texte selon la langue
+        Theme.textContent = isEnglish ? 'Light theme' : 'Thème clair';
+        
+    } else { // Désactiver le mode sombre
+        document.body.style.backgroundColor = '';
+        document.body.style.color = '';
         
         // Réinitialiser le header
-        const header = document.querySelector('header'); // Sélectionner le header
-        if (header) { // Si le header existe
-            header.style.color = ''; // Réinitialiser au CSS original
+        const header = document.querySelector('header');
+        if (header) {
+            header.style.color = '';
         }
         
         // Réinitialiser les cellules
-        const cells = document.querySelectorAll('td, th'); // Sélectionner toutes les cellules et en-têtes
-        cells.forEach(cell => { // Pour chaque cellule
-            cell.style.backgroundColor = ''; // Réinitialiser au CSS original
+        const cells = document.querySelectorAll('td, th');
+        cells.forEach(cell => {
+            cell.style.backgroundColor = '';
         });
         
-        Theme.textContent = 'Thème sombre'; // Changer le texte du bouton
+        // Adapter le texte selon la langue
+        Theme.textContent = isEnglish ? 'Dark theme' : 'Thème sombre';
     }
-    isDarkMode = !isDarkMode; // Inverser l'état du thème
+    
+    isDarkMode = !isDarkMode;
 });
