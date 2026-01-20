@@ -14,12 +14,27 @@ header { /*ENTETE DE LA PAGE*/
     margin-bottom: 10px; /*espace autour de la bordure du bas*/
 }
 
+@media (max-width:480px) {
+    header {
+        font-size: 24px;
+        padding:15px;
+    }
+}
+
 body { /*CORPS DE LA PAGE*/
     background-color: antiquewhite; /*Couleur de fond de la page*/
 }
 
+
 h3 { /*Sous-titre de la page*/
     margin: 15px; /*marges de 20px de tous les côtés*/
+}
+
+@media (max-width:480px) {
+    h3 {
+        font-size: 18px;
+        margin:5px;
+    }
 }
 
 table { /*ensemble du tableau*/
@@ -33,6 +48,13 @@ table { /*ensemble du tableau*/
     padding: 10px; /*espace entre le contenu et la bordure*/
     box-shadow: 0 10px 10px 5px rgba(0,0,0,0.6); /* Ombre */
     background-color: darkcyan;
+}
+
+@media (max-width:480px) {
+    table {
+        box-sizing: content-box;
+        margin: 10;
+    }
 }
 
 tr { /*ligne du tableau*/
@@ -58,6 +80,13 @@ th { /*cellules de la ligne 1*/
     padding-top: 10px; /*espace entre le texte et le bord de la cellule*/
 }
 
+@media (max-width:480px) {
+    th {
+        font-size: 18px;
+        color: black;
+    }
+}
+
 .case,td { /*cellules des autres lignes*/
     background-color:whitesmoke; /*couleur de fond des cellules des autres lignes*/
     padding-top: 10px; /*espace entre le texte et le bord de la cellule*/
@@ -74,6 +103,21 @@ button { /*bouton*/
     border-radius: 10px; /*arrondissement des coins du bouton*/
     font-size: 20px; /*taille de la police*/
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.9); /* Ombre */
+}
+
+@media (max-width:769px) {
+    button {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media (max-width:480px) {
+    button {
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+    }
 }
 
 button:hover{ /*Effet au survol du bouton*/
