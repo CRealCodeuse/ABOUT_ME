@@ -37,59 +37,76 @@ h3 { /*Sous-titre de la page*/
     }
 }
 
-table { /*ensemble du tableau*/
-    display: flex; /*s'adapte à la largeur de la page*/
-    flex-direction: column; /*Important !*/
-    outline: 3px solid black; /*bordure outline*/
-    border-radius: 10px; /*arrondissement de la bordure*/
-    margin: 15px; /*marges de 15px de tous les côtés*/
-    width: calc(100% - 30px); /*100% - les (15px x 2) de la marge sur la gauche et droite*/
-    box-sizing: border-box; /*inclure la bordure et la marge dans la largeur totale*/
-    padding: 10px; /*espace entre le contenu et la bordure*/
-    box-shadow: 0 10px 10px 5px rgba(0,0,0,0.6); /* Ombre */
+table {
+    display: flex; /* ✅ Flex pour aligner les tr */
+    flex-direction: row;
+    flex-wrap: wrap; /* ✅ WRAP pour permettre le retour à la ligne */
+    outline: 3px solid black;
+    border-radius: 10px;
+    margin: 15px;
+    width: calc(100% - 30px);
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0 10px 10px 5px rgba(0,0,0,0.6);
     background-color: darkcyan;
+    gap: 10px;
 }
 
-@media (max-width:480px) {
-    table {
-        box-sizing: content-box;
-        margin: 10;
+tr {
+    display: flex;
+    flex-direction: row; /* ✅ Horizontal (th et td côte à côte) */
+    width: calc(253% - 5px); /* ✅ Exactement 2 tr par ligne = 50% chacun */
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+th, td {
+    flex: 1; /* ✅ Chaque cellule prend une part égale */
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+th {
+    font-size: 25px;
+    font-style: italic;
+    background-color: aquamarine;
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.case, td {
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+/* TABLETTE : 2 colonnes */
+@media (max-width: 768px) {
+    tr {
+        width: calc(50% - 5px); /* Garde 2 colonnes */
     }
 }
 
-tr { /*ligne du tableau*/
-    display: flex; /*s'adapte à la largeur de la page*/
-    width: 100%; /*largeur de la ligne 100% de la table*/
+/* MOBILE : 1 colonne */
+@media (max-width: 480px) {
+    table {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    tr {
+        width: 100%; /* ✅ 1 colonne = 100% */
+        flex-direction: column;
+    }
 }
 
-th, td { /*cellules de la table*/
-    flex: 1; /*chaque cellule prend une part égale de l'espace disponible*/
-    text-align: center; /*alignement du texte*/
-    border: 1px solid black; /*bordure*/
-    border-radius: 10px; /*arrondissement des coins*/
-    box-sizing: border-box; /*inclure la bordure et la marge dans la largeur totale*/
-    min-width: 0; /* Empêche le débordement du contenu */
-}
-
-th { /*cellules de la ligne 1*/
-    font-size: 25px; /*taille de la police*/
-    font-style: italic; /*style d'écriture*/
-    margin-bottom: 10px; /*marge en bas*/
-    background-color: aquamarine; /*couleur de fond des cellulles de la ligne 1*/
-    border: 3px solid black; /*bordure des cellules de la ligne 1*/
-    padding-top: 10px; /*espace entre le texte et le bord de la cellule*/
-}
-
-@media (max-width:480px) {
+@media (max-width: 480px) {
     th {
         font-size: 18px;
         color: black;
     }
-}
-
-.case,td { /*cellules des autres lignes*/
-    background-color:whitesmoke; /*couleur de fond des cellules des autres lignes*/
-    padding-top: 10px; /*espace entre le texte et le bord de la cellule*/
 }
 
 .case:hover{ /*Effet au survol des cellules des autres lignes*/
