@@ -38,9 +38,8 @@ h3 { /*Sous-titre de la page*/
 }
 
 table {
-    display: flex; /* ✅ Flex pour aligner les tr */
     flex-direction: row;
-    flex-wrap: wrap; /* ✅ WRAP pour permettre le retour à la ligne */
+    flex-wrap: wrap;
     outline: 3px solid black;
     border-radius: 10px;
     margin: 15px;
@@ -49,24 +48,23 @@ table {
     padding: 10px;
     box-shadow: 0 10px 10px 5px rgba(0,0,0,0.6);
     background-color: darkcyan;
-    gap: 10px;
+    border-collapse: separate;
+    border-spacing: 10px;
 }
 
 tr {
-    display: flex;
-    flex-direction: row; /* ✅ Horizontal (th et td côte à côte) */
-    width: calc(253% - 5px); /* ✅ Exactement 2 tr par ligne = 50% chacun */
+    flex-direction: row; 
+    width: 100%;
     box-sizing: border-box;
     margin-bottom: 15px;
 }
 
 th, td {
-    flex: 1; /* ✅ Chaque cellule prend une part égale */
+    width:25%;
     text-align: center;
     border: 1px solid black;
     border-radius: 10px;
     box-sizing: border-box;
-    min-width: 0;
 }
 
 th {
@@ -82,31 +80,47 @@ th {
     padding: 10px;
 }
 
-/* TABLETTE : 2 colonnes */
+/* RESPONSIVE TABLETTE */
 @media (max-width: 768px) {
-    tr {
-        width: calc(50% - 5px); /* Garde 2 colonnes */
-    }
-}
-
-/* MOBILE : 1 colonne */
-@media (max-width: 480px) {
     table {
         display: flex;
         flex-direction: column;
     }
     
     tr {
-        width: 100%; /* ✅ 1 colonne = 100% */
-        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px;
     }
+    
+    th, td {
+        width: calc(50% - 5px);
+        flex: 0 0 calc(50% - 5px);
+    }
+    
+    tr:first-child {
+        margin-bottom: 10px;
+    }
+
+    
 }
 
+/* RESPONSIVE MOBILE */
 @media (max-width: 480px) {
-    th {
-        font-size: 18px;
-        color: black;
+    th, td {
+        width: 100%;
+        flex: 0 0 100%;
     }
+
+    .Ecole, .Maison, .Projets {
+        display: none;
+    }
+
+    .Exemples, .Ligne1, .Ligne2 {
+        display: none;
+    }
+
 }
 
 .case:hover{ /*Effet au survol des cellules des autres lignes*/
