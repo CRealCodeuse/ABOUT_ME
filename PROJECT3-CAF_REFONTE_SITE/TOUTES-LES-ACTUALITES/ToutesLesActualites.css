@@ -645,13 +645,7 @@ header > div:first-child {
   BODY - DESCRIPTION
 ===================================*/
 
-. {
-    background-color: #141455; /* Couleur de fond */
-    color: white; /* Couleur du texte */
-    text-align: center; /* Centre le texte */
-    padding: 10px; /*Espace autour du titre*/
-    font-size: 25;
-}
+
 
 /*===================================
   FOOTER
