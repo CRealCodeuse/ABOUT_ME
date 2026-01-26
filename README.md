@@ -1,4 +1,4 @@
-![alt text](<README-Images/Image - Hello.png>)
+![Image Hello](<README-Images/Image - Hello.png>)
 
 🤩 HEY THERE ! Welcome on my GitHub !
 
@@ -8,7 +8,9 @@
 
 💼 There you can see projects I coded or working on currently.
 
-🔗 LINKS to my PORTFOLIO and my LINKEDIN are both on my profile.
+🔗 LINKS 
+- My portfolio : https://www.elise-degardin-portfoliodev.fr
+- My LinkedIn : https://www.linkedin.com/in/elise-degardin/
 
 ![Image Coding](<README-Images/Image - Coding.png>)
 
