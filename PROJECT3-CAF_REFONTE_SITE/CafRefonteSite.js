@@ -51,19 +51,6 @@ window.addEventListener('click', (e) => {
     }
 });
 
-//AFFICHAGE DU BOUTON AUTOMATIQUE SELON SECTION SELECTIONNEE
-const nomFichier = window.location.pathname.split('/').pop();
-
-// Si le nom du fichier contient "Allocataire"
-if (Allocataires && nomFichier.toLowerCase().includes('allocataire')) {
-    Allocataires.classList.add('active-section');
-}
-
-// Si le nom du fichier contient "Professionnel"
-if (Professionnels && nomFichier.toLowerCase().includes('professionnel')) {
-    Professionnels.classList.add('active-section');
-}
-
 //VARIABLES DES BOUTONS DU FORMULAIRE DE CONTACT
 const CongeNaissance = document.querySelector('.Information1');
 const PopUpCongeNaissance = document.querySelector('.PopUpCongeNaissance');

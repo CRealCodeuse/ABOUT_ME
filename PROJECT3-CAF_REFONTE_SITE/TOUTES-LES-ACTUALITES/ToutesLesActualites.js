@@ -24,37 +24,26 @@ window.addEventListener('click', (e) => {
     }
 });
 
-//AFFICHAGE DU BOUTON AUTOMATIQUE SELON SECTION SELECTIONNEE
-const nomFichier = window.location.pathname.split('/').pop();
-
-// Si le nom du fichier contient "Allocataire"
-if (Allocataires && nomFichier.toLowerCase().includes('allocataire')) {
-    Allocataires.classList.add('active-section');
-}
-
-// Si le nom du fichier contient "Professionnel"
-if (Professionnels && nomFichier.toLowerCase().includes('professionnel')) {
-    Professionnels.classList.add('active-section');
-}
+/****************POP UP ACTUALITES GAUCHE 1 ****************/
 
 //VARIABLES DES BOUTONS DU FORMULAIRE DE CONTACT
-const CongeNaissance = document.querySelector('.Information1');
-const PopUpCongeNaissance = document.querySelector('.PopUpCongeNaissance');
-const FermerCongeNaissance = document.querySelector('.FermerCongeNaissance');
+const PopUpGauche1 = document.querySelector('.PopUpGauche1');
+const LireLArticle1 = document.querySelector('.LireLArticle1');
+const FermerPopUpGauche1 = document.querySelector('.FermerPopUpGauche1');
 
 //OUVRIR POP UP DE CONTACT
-CongeNaissance.addEventListener('click', () => {
-    PopUpCongeNaissance.style.display = 'block';   
+LireLArticle1.addEventListener('click', () => {
+    PopUpGauche1.style.display = 'block';   
 });
 
 //FERMER POP UP DE CONTACT
-FermerCongeNaissance.addEventListener('click', () => {
-   PopUpCongeNaissance.style.display = 'none'; 
+FermerPopUpGauche1.addEventListener('click', () => {
+   PopUpGauche1.style.display = 'none'; 
 });
 
 //FERMER POP UP EN CLIQUANT EN DEHORS DE CELLE-CI
 window.addEventListener('click', (e) => {
-    if (e.target === PopUpCongeNaissance) {
-        PopUpCongeNaissance.style.display = 'none';
+    if (e.target === PopUpGauche1) {
+        PopUpGauche1.style.display = 'none';
     }
 });

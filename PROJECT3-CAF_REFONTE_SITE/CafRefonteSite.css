@@ -841,29 +841,6 @@ header > div:first-child {
     background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
 }
 
-/* TABLETTE */
-@media (max-width: 768px) {
-    .ContenuPopUpCongeNaissance, .ContenuPopUpAides2026, .ContenuPopUpPrimeNoel2025, .ContenuPopUpCyberattaque {
-        width: 95%;
-        padding: 30px;
-        margin: 20px auto;
-        font-size: 16px;
-    }
-}
-
-/* MOBILE */
-@media (max-width: 480px) {
-    .ContenuPopUpCongeNaissance, .ContenuPopUpAides2026, .ContenuPopUpPrimeNoel2025, .ContenuPopUpCyberattaque {
-        width: 100%; /* Prend toute la largeur disponible */
-        max-width: 100%; /* Enlève la limite */
-        padding: 15px;
-        margin: 10px auto;
-        font-size: 14px;
-        border: 2px solid #141455;
-        
-    }
-}
-
     /*===================================
     CONTENU POP UP
     ===================================*/
@@ -881,17 +858,29 @@ header > div:first-child {
     font-size: 18px;
 }
 
+/* TABLETTE */
+@media (max-width: 768px) {
+    .ContenuPopUpCongeNaissance, .ContenuPopUpAides2026, .ContenuPopUpPrimeNoel2025, .ContenuPopUpCyberattaque {
+        width: 95%;
+        padding: 30px;
+        margin: 20px auto;
+        font-size: 16px;
+    }
+}
+
+/*MOBILE*/
 @media (max-width:480px) {
     .ContenuPopUpCongeNaissance, .ContenuPopUpAides2026, .ContenuPopUpPrimeNoel2025, .ContenuPopUpCyberattaque {
         background-color:#e3e3f1;
         margin: 10% auto;
         padding: 20px;
-        border: 2px solid black;
+        border: 2px solid #141455;
         border-radius: 10px;
         width: 95%;
         max-width: 330px;
         position: relative;
         box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+        font-size: 14px;
     }
 }
 

@@ -583,7 +583,7 @@ header > div:first-child {
 
 .divGauche1, .divDroite1, .divGauche2, .divDroite2, .divGauche3, .divDroite3, .divGauche4, .divDroite4,
 .divGauche5, .divDroite5, .divGauche6, .divDroite6, .divGauche7, .divDroite7, .divGauche8, .divDroite8,
-.divGauche9, .divDroite9 {
+.divGauche9, .divDroite9, .divGauche10, .divDroite10 {
 
     width: 50%;
     background-color: #e3e3f1;
@@ -596,7 +596,7 @@ header > div:first-child {
     
     .divGauche1, .divDroite1, .divGauche2, .divDroite2, .divGauche3, .divDroite3, .divGauche4, .divDroite4,
     .divGauche5, .divDroite5, .divGauche6, .divDroite6, .divGauche7, .divDroite7, .divGauche8, .divDroite8,
-    .divGauche9, .divDroite9 {
+    .divGauche9, .divDroite9, .divGauche10, .divDroite10 {
 
         width: fit-content;
         margin: 10px 0px;
@@ -608,7 +608,7 @@ header > div:first-child {
 .LireLArticle1, .LireLArticle2, .LireLArticle3, .LireLArticle4, .LireLArticle5, .LireLArticle6,
 .LireLArticle7, .LireLArticle8, .LireLArticle9, .LireLArticle10, .LireLArticle11, .LireLArticle12,
 .LireLArticle13, .LireLArticle14, .LireLArticle15, .LireLArticle16, .LireLArticle17, .LireLArticle18,
-.LireLArticle19, .LireLArticle20 {
+.LireLArticle19, .LireLArticle20, .LireLArticle21, .LireLArticle22 {
 
     border: none;
     background-color: #141455;
@@ -625,12 +625,105 @@ header > div:first-child {
 .LireLArticle1:hover, .LireLArticle2:hover, .LireLArticle3:hover, .LireLArticle4:hover, .LireLArticle5:hover,
 .LireLArticle6:hover, .LireLArticle7:hover, .LireLArticle8:hover, .LireLArticle9:hover, .LireLArticle10:hover,
 .LireLArticle11:hover, .LireLArticle12:hover, .LireLArticle13:hover, .LireLArticle14:hover, .LireLArticle15:hover,
-.LireLArticle16:hover, .LireLArticle17:hover, .LireLArticle18:hover, .LireLArticle19:hover, .LireLArticle20:hover  {
-    
+.LireLArticle16:hover, .LireLArticle17:hover, .LireLArticle18:hover, .LireLArticle19:hover, .LireLArticle20:hover,
+.LireLArticle21:hover, .LireLArticle22:hover  {
+
     background-color: #e3e3f1; /* Couleur de fond au survol */
     color: #141455; /* Couleur du texte au survol */
     border: 2px solid #141455;
     cursor: pointer;
+}
+
+/*POP UP ACTUALITES*/
+
+.PopUpGauche1 {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; /* Prend toute la hauteur */
+    overflow-y: auto; /* Permet le scroll sur tout l'écran */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+}
+
+.ContenuPopUpGauche1 {
+    background-color:#e3e3f1;
+    margin: 30px auto;
+    padding: 50px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1600px;
+    position: relative;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    border: 3px solid #141455;
+    font-size: 18px;
+}
+
+/* TABLETTE */
+@media (max-width: 768px) {
+    .ContenuPopUpGauche1 {
+        width: 95%;
+        padding: 30px;
+        margin: 20px auto;
+        font-size: 16px;
+    }
+}
+
+/*MOBILE*/
+@media (max-width:480px) {
+    .ContenuPopUpGauche1{
+        background-color:#e3e3f1;
+        margin: 10% auto;
+        padding: 20px;
+        border: 2px solid #141455;
+        border-radius: 10px;
+        width: 95%;
+        max-width: 330px;
+        position: relative;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+        font-size: 14px;
+    }
+}
+
+.TitrePopUpGauche1 {
+    background-color: #141455;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+@media (max-width:480px) {
+    .TitrePopUpGauche1 {
+        margin: 30px 5px 5px 5px;
+        padding: 15px;
+        font-size: 22px;
+    }
+}
+
+.FermerPopUpGauche1 {
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width:480px) {
+    .FermerPopUpGauche1 {
+        position: absolute;
+        right: 15px;
+        top: 5px;
+    }
+}
+
+.FermerPopUpGauche1:hover {
+    color:#000;
 }
 
 /*===================================
