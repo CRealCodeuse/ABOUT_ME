@@ -669,7 +669,7 @@ header > div:first-child {
         width: 95%;
         padding: 30px;
         margin: 20px auto;
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -685,7 +685,7 @@ header > div:first-child {
         max-width: 330px;
         position: relative;
         box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
-        font-size: 14px;
+        font-size: 18px;
     }
 }
 
@@ -701,7 +701,7 @@ header > div:first-child {
     .TitrePopUpGauche1 {
         margin: 30px 5px 5px 5px;
         padding: 15px;
-        font-size: 22px;
+        font-size: 20px;
     }
 }
 
